@@ -2,23 +2,16 @@ const express=require("express");
 const path=require("path");
 const bodyParser=require("body-parser");
 const cors=require("cors");
-const poll=require("./routes/poll");
-const app=express();
-const mongoose=require("mongoose");
-
-//DB config
-require("./config/db")
 const dotenv= require("dotenv")
 dotenv.config();
 
-const dbUrl=process.env.DB_URL;
-mongoose.connect(dbUrl)
-.then(() => {
-    console.log("Connected to database succcessfully");
-})
-.catch((err) => {
-    console.log(err);
-})
+const poll=require("./routes/poll");
+const mongoose=require("mongoose");
+
+const app=express();
+
+//DB config
+require("./config/db")
 
 //set public folder
 app.use(express.static(path.join(__dirname,"public")));

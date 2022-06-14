@@ -9,4 +9,10 @@ mongoose.Promise=global.Promise;
 
 //connecting to mongodbatlas
 mongoose.connect(dbUrl)
-.then(()=>console.log("DB connected"));
+.then(() => {
+    console.log("Connected to database succcessfully");
+})
+.catch((err) => {
+    console.log(err);
+})
+

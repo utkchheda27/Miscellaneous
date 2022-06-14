@@ -8,16 +8,16 @@ const {appId,key,secret}=process.env;
 const Vote=require("../models/vote")
 
 const pusher = new Pusher({
-  appId: appId,
-  key: key,
-  secret: secret,
+  appId: "1422822",
+  key: "0019b32075c7c166e5de",
+  secret: "dd74bfa5b00d114b676c",
   cluster: "ap2",
   useTLS: true
 });
 
 //setting router
 router.get("/",(req,res)=>{
-    res.send("POLL");
+    Vote.find().then(votes=>res.json({success:true,votes:votes}))//array of votes inside votes
 });
 
 //to handle post requst made using the form
