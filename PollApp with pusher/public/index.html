@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polling App</title>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      
+      <!--Pusher CDN-->
+      <script src="https://js.pusher.com/7.1/pusher.min.js"></script>
+
+      <!--CanvasJS CDN for charts-->
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>VOTE</h1>
+        <p>Vote for your favourite WebDev stack</p>
+        <form id="vote-form">
+            <p>
+                <label for="MERN">
+                <input type="radio" name="stack" id="MERN" value ="MERN">
+                <span>MERN</span></label>
+            </p>
+            <p>
+                <label for="LAMP">
+                <input type="radio" name="stack" id="LAMP"value ="LAMP">
+                <span>LAMP</span></label>
+            </p>
+            <p>
+                <label for="DJANGO">
+                <input type="radio" name="stack" id="DJANGO" value ="DJANGO">
+                <span>DJANGO</span></label>
+            </p>
+            <p>
+                <label for="Ruby on Rails">
+                <input type="radio" name="stack" id="Ruby on Rails" value ="Ruby on Rails">
+                <span>Ruby on Rails</span></label>
+            </p>
+            <p>
+                <label for="Something Else">
+                <input type="radio" name="stack" id="Something Else" value ="Something Else">
+                <span> Something Else</span> </label>
+            </p>
+            <input type="submit" value="Vote" class="btn">
+        </form>
+    </div>
+    <br><br>
+    <div id="chartContainer" style="height:300px;width:60%;margin: auto;"></div>
+    
+      <!--js for frontend js-->
+      <script src="main.js"></script>
+</body>
+</html>
