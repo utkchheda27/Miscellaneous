@@ -1,0 +1,29 @@
+javac Optimization.java
+
+java
+-XX:+UnlockDiagnosticVMOptions
+-XX:+UnlockExperimentalVMOptions
+-XX:+PrintCompilation -XX:+PrintInlining
+-XX:+TraceDeoptimization
+-XX:+LogCompilation
+org.example.Optimization
+
+When Java runs your code, it CONTINUOUSLY restructures it for optimal performance.
+
+• Java first compiles the  program into bytecode
+• The JVM starts up and interprets the bytecode line by line
+• As it runs, the JVM watches how the code behaves
+
+After it's watched enough, something incredible happens.
+
+When a piece of code becomes "hot" enough (invoked many times, used in a tight loop, etc), the JVM *dynamically* compiles it into native code specifically for local machine.
+🔥 This is called Just-In-Time (JIT) compilation, and it's what makes modern Java fast.
+
+Why JIT does not compile everything at the start?
+Because the JVM can make real-time decisions about how to restructure the code on the fly.
+• it might inline a method
+• or unroll a loop
+• or even remove what it thinks are now dead-code paths
+But those decisions are speculative. If the assumptions stop being true (say, a rarely used null check finally fires), Java will deoptimize the code—falling back to interpreted mode.
+
+Turned on a few JVM flags that make Java log its optimization/deoptimization decisions.

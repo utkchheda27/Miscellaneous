@@ -1,0 +1,1857 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hotspot_log version='160 1' process='14574' time_ms='1766608564268'>
+<vm_version>
+<name>
+Java HotSpot(TM) 64-Bit Server VM
+</name>
+<release>
+22.0.2+9-70
+</release>
+<info>
+Java HotSpot(TM) 64-Bit Server VM (22.0.2+9-70) for linux-amd64 JRE (22.0.2+9-70), built on 2024-06-04T16:52:23Z by &quot;mach5one&quot; with gcc 13.2.0
+</info>
+</vm_version>
+<vm_arguments>
+<args>
+-XX:+UnlockDiagnosticVMOptions -XX:+UnlockExperimentalVMOptions -XX:+PrintCompilation -XX:+PrintInlining -XX:+TraceDeoptimization -XX:+LogCompilation </args>
+<command>
+Optimization
+</command>
+<launcher>
+SUN_STANDARD
+</launcher>
+<properties>
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.version=22.0.2+9-70
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+jdk.debug=release
+sun.boot.library.path=/usr/lib/jvm/jdk-22.0.2-oracle-x64/lib
+java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+java.home=/usr/lib/jvm/jdk-22.0.2-oracle-x64
+java.class.path=.
+java.vm.info=mixed mode, sharing
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=22
+java.vm.vendor=Oracle Corporation
+sun.java.command=Optimization
+sun.java.launcher=SUN_STANDARD
+</properties>
+</vm_arguments>
+<tty>
+<writer thread='14575'/>
+<blob name='MethodHandlesAdapterBlob' total_size='4224'>
+<sect index='1' capacity='4224' size='378' remaining='3846'/>
+</blob>
+<writer thread='14588'/>
+<thread_logfile thread='14588' filename='/tmp/hs_c14588_pid14574.log'/>
+<writer thread='14589'/>
+<thread_logfile thread='14589' filename='/tmp/hs_c14589_pid14574.log'/>
+<writer thread='14575'/>
+<task_queued compile_id='1' method='java.lang.Object &lt;init&gt; ()V' bytes='1' count='384' iicount='384' level='3' stamp='0.019' comment='tiered' hot_count='384'/>
+<writer thread='14589'/>
+19    1       3       java.lang.Object::&lt;init&gt; (1 bytes)
+<nmethod compile_id='1' compiler='c1' level='3' entry='0x000076b6f4c001a0' size='744' address='0x000076b6f4c00010' relocation_offset='336' insts_offset='400' stub_offset='608' scopes_data_offset='672' scopes_pcs_offset='688' dependencies_offset='736' metadata_offset='656' method='java.lang.Object &lt;init&gt; ()V' bytes='1' count='401' iicount='401' stamp='0.020'/>
+<writer thread='14575'/>
+<task_queued compile_id='2' method='java.lang.String coder ()B' bytes='15' count='256' iicount='256' level='3' stamp='0.021' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+20    2       3       java.lang.String::coder (15 bytes)
+<nmethod compile_id='2' compiler='c1' level='3' entry='0x000076b6f4c004a0' size='784' address='0x000076b6f4c00310' relocation_offset='336' insts_offset='400' stub_offset='656' scopes_data_offset='712' scopes_pcs_offset='728' dependencies_offset='776' metadata_offset='704' method='java.lang.String coder ()B' bytes='15' count='263' iicount='263' stamp='0.021'/>
+<writer thread='14575'/>
+<task_queued compile_id='3' method='java.lang.String length ()I' bytes='11' count='256' iicount='256' level='3' stamp='0.022' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+22    3       3       java.lang.String::length (11 bytes)
+                              @ 6   java.lang.String::coder (15 bytes)   inline
+<nmethod compile_id='3' compiler='c1' level='3' entry='0x000076b6f4c00820' size='968' address='0x000076b6f4c00690' relocation_offset='336' insts_offset='400' stub_offset='760' scopes_data_offset='824' scopes_pcs_offset='864' dependencies_offset='944' nul_chk_table_offset='952' metadata_offset='808' method='java.lang.String length ()I' bytes='11' count='261' iicount='261' stamp='0.023'/>
+<writer thread='14575'/>
+<task_queued compile_id='4' method='java.lang.String hashCode ()I' bytes='60' count='256' iicount='256' level='3' stamp='0.023' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+23    4       3       java.lang.String::hashCode (60 bytes)
+                              @ 17   java.lang.String::isLatin1 (19 bytes)   inline
+                              @ 27   java.lang.StringLatin1::hashCode (52 bytes)   failed to inline: callee is too large
+                              @ 37  java/lang/StringUTF16::hashCode (not loaded)   failed to inline: not inlineable
+<nmethod compile_id='4' compiler='c1' level='3' entry='0x000076b6f4c00c60' size='1440' address='0x000076b6f4c00a90' relocation_offset='336' insts_offset='464' stub_offset='1192' scopes_data_offset='1288' scopes_pcs_offset='1336' dependencies_offset='1432' metadata_offset='1272' method='java.lang.String hashCode ()I' bytes='60' count='326' iicount='326' stamp='0.024'/>
+<writer thread='14575'/>
+<nmethod compile_id='5' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6c9180' size='392' address='0x000076b6fc6c9010' relocation_offset='336' insts_offset='368' method='java.lang.invoke.MethodHandle linkToStatic (Ljava/lang/invoke/MemberName;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.025'/>
+25    5     n 0       java.lang.invoke.MethodHandle::linkToStatic(L)L (native)   (static)
+<nmethod compile_id='6' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6c94a0' size='896' address='0x000076b6fc6c9310' relocation_offset='336' insts_offset='400' stub_offset='892' method='java.lang.Object hashCode ()I' bytes='0' count='256' iicount='256' stamp='0.027'/>
+26    6     n 0       java.lang.Object::hashCode (native)   
+<nmethod compile_id='7' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6c9880' size='392' address='0x000076b6fc6c9710' relocation_offset='336' insts_offset='368' method='java.lang.invoke.MethodHandle linkToStatic (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/MemberName;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.027'/>
+27    7     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLL)L (native)   (static)
+<nmethod compile_id='8' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6c9b80' size='400' address='0x000076b6fc6c9a10' relocation_offset='336' insts_offset='368' stub_offset='393' method='java.lang.invoke.MethodHandle linkToStatic (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/MemberName;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.027'/>
+27    8     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLL)L (native)   (static)
+<nmethod compile_id='9' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6c9e80' size='400' address='0x000076b6fc6c9d10' relocation_offset='336' insts_offset='368' stub_offset='398' method='java.lang.invoke.MethodHandle invokeBasic ()Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.028'/>
+28    9     n 0       java.lang.invoke.MethodHandle::invokeBasic()L (native)   
+<task_queued compile_id='10' method='java.util.concurrent.ConcurrentHashMap tabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;I)Ljava/util/concurrent/ConcurrentHashMap$Node;' bytes='22' count='256' iicount='256' level='3' stamp='0.028' comment='tiered' hot_count='256'/>
+<task_queued compile_id='11' method='jdk.internal.misc.Unsafe getReferenceAcquire (Ljava/lang/Object;J)Ljava/lang/Object;' bytes='7' count='256' iicount='256' level='3' stamp='0.028' comment='tiered' hot_count='256'/>
+<task_queued compile_id='12' method='java.util.concurrent.ConcurrentHashMap spread (I)I' bytes='10' count='256' iicount='256' level='3' stamp='0.028' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+28   10       3       java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)
+<writer thread='14575'/>
+<nmethod compile_id='13' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6ca180' size='400' address='0x000076b6fc6ca010' relocation_offset='336' insts_offset='368' stub_offset='395' method='java.lang.invoke.MethodHandle linkToSpecial (Ljava/lang/Object;Ljava/lang/invoke/MemberName;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.028'/>
+28   13     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LL)L (native)   (static)
+<writer thread='14589'/>
+                              @ 15   jdk.internal.misc.Unsafe::getReferenceAcquire (7 bytes)   inline
+                                @ 3   jdk.internal.misc.Unsafe::getReferenceVolatile (0 bytes)   intrinsic
+<nmethod compile_id='10' compiler='c1' level='3' entry='0x000076b6f4c01220' size='1272' address='0x000076b6f4c01090' relocation_offset='336' insts_offset='400' stub_offset='1064' scopes_data_offset='1136' scopes_pcs_offset='1184' dependencies_offset='1264' oops_offset='1112' metadata_offset='1120' method='java.util.concurrent.ConcurrentHashMap tabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;I)Ljava/util/concurrent/ConcurrentHashMap$Node;' bytes='22' count='259' iicount='259' stamp='0.029'/>
+28   11       3       jdk.internal.misc.Unsafe::getReferenceAcquire (7 bytes)
+                              @ 3   jdk.internal.misc.Unsafe::getReferenceVolatile (0 bytes)   intrinsic
+<nmethod compile_id='11' compiler='c1' level='3' entry='0x000076b6f4c017a0' size='840' address='0x000076b6f4c01610' relocation_offset='336' insts_offset='400' stub_offset='704' scopes_data_offset='760' scopes_pcs_offset='784' dependencies_offset='832' metadata_offset='752' method='jdk.internal.misc.Unsafe getReferenceAcquire (Ljava/lang/Object;J)Ljava/lang/Object;' bytes='7' count='259' iicount='259' stamp='0.029'/>
+28   12       3       java.util.concurrent.ConcurrentHashMap::spread (10 bytes)
+<nmethod compile_id='12' compiler='c1' level='3' entry='0x000076b6f4c01b20' size='720' address='0x000076b6f4c01990' relocation_offset='336' insts_offset='400' stub_offset='592' scopes_data_offset='648' scopes_pcs_offset='664' dependencies_offset='712' metadata_offset='640' method='java.util.concurrent.ConcurrentHashMap spread (I)I' bytes='10' count='258' iicount='258' stamp='0.029'/>
+<writer thread='14575'/>
+<task_queued compile_id='14' method='jdk.internal.util.Preconditions checkIndex (IILjava/util/function/BiFunction;)I' bytes='18' count='256' iicount='256' level='3' stamp='0.029' comment='tiered' hot_count='256'/>
+<task_queued compile_id='15' method='java.lang.String charAt (I)C' bytes='25' count='256' iicount='256' level='3' stamp='0.029' comment='tiered' hot_count='256'/>
+<task_queued compile_id='16' method='java.lang.String isLatin1 ()Z' bytes='19' count='360' iicount='360' level='3' stamp='0.029' comment='tiered' hot_count='360'/>
+<writer thread='14589'/>
+29   16       3       java.lang.String::isLatin1 (19 bytes)
+<nmethod compile_id='16' compiler='c1' level='3' entry='0x000076b6f4c01e20' size='840' address='0x000076b6f4c01c90' relocation_offset='336' insts_offset='400' stub_offset='712' scopes_data_offset='768' scopes_pcs_offset='784' dependencies_offset='832' metadata_offset='760' method='java.lang.String isLatin1 ()Z' bytes='19' count='419' iicount='419' stamp='0.030'/>
+<writer thread='14575'/>
+<task_queued compile_id='17' method='java.lang.StringLatin1 charAt ([BI)C' bytes='15' count='384' iicount='384' level='3' stamp='0.030' comment='tiered' hot_count='384'/>
+<task_queued compile_id='18' method='java.lang.String checkIndex (II)V' bytes='10' count='384' iicount='384' level='3' stamp='0.030' comment='tiered' hot_count='384'/>
+<writer thread='14589'/>
+29   14       3       jdk.internal.util.Preconditions::checkIndex (18 bytes)
+                              @ 12   jdk.internal.util.Preconditions::outOfBoundsCheckIndex (25 bytes)   failed to inline: callee uses too much stack
+<nmethod compile_id='14' compiler='c1' level='3' entry='0x000076b6f4c021a0' size='952' address='0x000076b6f4c02010' relocation_offset='336' insts_offset='400' stub_offset='736' scopes_data_offset='808' scopes_pcs_offset='848' dependencies_offset='928' nul_chk_table_offset='936' metadata_offset='800' method='jdk.internal.util.Preconditions checkIndex (IILjava/util/function/BiFunction;)I' bytes='18' count='415' iicount='415' stamp='0.030'/>
+29   15       3       java.lang.String::charAt (25 bytes)
+                              @ 1   java.lang.String::isLatin1 (19 bytes)   inline
+<writer thread='14575'/>
+<task_queued compile_id='19' method='jdk.internal.util.StrongReferenceKey get ()Ljava/lang/Object;' bytes='5' count='128' iicount='128' level='1' stamp='0.030' comment='tiered' hot_count='128'/>
+<writer thread='14589'/>
+                              @ 12   java.lang.StringLatin1::charAt (15 bytes)   inline
+                                @ 3   java.lang.String::checkIndex (10 bytes)   inline
+                                  @ 5   jdk.internal.util.Preconditions::checkIndex (18 bytes)   intrinsic
+                              @ 21  java/lang/StringUTF16::charAt (not loaded)   failed to inline: not inlineable
+<nmethod compile_id='15' compiler='c1' level='3' entry='0x000076b6f4c025e0' size='1704' address='0x000076b6f4c02410' relocation_offset='336' insts_offset='464' stub_offset='1296' scopes_data_offset='1400' scopes_pcs_offset='1504' dependencies_offset='1680' nul_chk_table_offset='1688' oops_offset='1360' metadata_offset='1368' method='java.lang.String charAt (I)C' bytes='25' count='590' iicount='590' stamp='0.030'/>
+30   17       3       java.lang.StringLatin1::charAt (15 bytes)
+                              @ 3   java.lang.String::checkIndex (10 bytes)   inline
+                                @ 5   jdk.internal.util.Preconditions::checkIndex (18 bytes)   intrinsic
+<nmethod compile_id='17' compiler='c1' level='3' entry='0x000076b6f4c02ca0' size='1088' address='0x000076b6f4c02b10' relocation_offset='336' insts_offset='400' stub_offset='800' scopes_data_offset='872' scopes_pcs_offset='936' dependencies_offset='1064' nul_chk_table_offset='1072' oops_offset='848' metadata_offset='856' method='java.lang.StringLatin1 charAt ([BI)C' bytes='15' count='723' iicount='723' stamp='0.030'/>
+30   18       3       java.lang.String::checkIndex (10 bytes)
+                              @ 5   jdk.internal.util.Preconditions::checkIndex (18 bytes)   intrinsic
+<nmethod compile_id='18' compiler='c1' level='3' entry='0x000076b6f4c03120' size='840' address='0x000076b6f4c02f90' relocation_offset='336' insts_offset='400' stub_offset='656' scopes_data_offset='720' scopes_pcs_offset='752' dependencies_offset='832' oops_offset='704' metadata_offset='712' method='java.lang.String checkIndex (II)V' bytes='10' count='762' iicount='762' stamp='0.030'/>
+30   19       1       jdk.internal.util.StrongReferenceKey::get (5 bytes)
+<nmethod compile_id='19' compiler='c1' level='1' entry='0x000076b6fc6ca4a0' size='640' address='0x000076b6fc6ca310' relocation_offset='336' insts_offset='400' stub_offset='544' scopes_data_offset='592' scopes_pcs_offset='600' dependencies_offset='632' method='jdk.internal.util.StrongReferenceKey get ()Ljava/lang/Object;' bytes='5' count='131' iicount='131' stamp='0.030'/>
+<writer thread='14575'/>
+<task_queued compile_id='20' method='java.lang.Enum ordinal ()I' bytes='5' count='128' iicount='128' level='1' stamp='0.031' comment='tiered' hot_count='128'/>
+<writer thread='14589'/>
+31   20       1       java.lang.Enum::ordinal (5 bytes)
+<writer thread='14575'/>
+<nmethod compile_id='21' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6ca780' size='400' address='0x000076b6fc6ca610' relocation_offset='336' insts_offset='368' stub_offset='398' method='java.lang.invoke.MethodHandle invokeBasic (Ljava/lang/Object;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.031'/>
+31   21     n 0       java.lang.invoke.MethodHandle::invokeBasic(L)L (native)   
+<writer thread='14589'/>
+<nmethod compile_id='20' compiler='c1' level='1' entry='0x000076b6fc6caaa0' size='640' address='0x000076b6fc6ca910' relocation_offset='336' insts_offset='400' stub_offset='544' scopes_data_offset='592' scopes_pcs_offset='600' dependencies_offset='632' method='java.lang.Enum ordinal ()I' bytes='5' count='129' iicount='129' stamp='0.031'/>
+<writer thread='14575'/>
+<nmethod compile_id='22' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cad80' size='400' address='0x000076b6fc6cac10' relocation_offset='336' insts_offset='368' stub_offset='395' method='java.lang.invoke.MethodHandle linkToSpecial (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/MemberName;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.031'/>
+31   22     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLL)L (native)   (static)
+<nmethod compile_id='23' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cb080' size='400' address='0x000076b6fc6caf10' relocation_offset='336' insts_offset='368' stub_offset='397' method='java.lang.invoke.MethodHandle linkToStatic (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/MemberName;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.032'/>
+32   23     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLLLL)L (native)   (static)
+<task_queued compile_id='24' method='java.lang.Object &lt;init&gt; ()V' bytes='1' count='1421' iicount='1421' stamp='0.032' comment='tiered' hot_count='1421'/>
+<writer thread='14588'/>
+32   24       4       java.lang.Object::&lt;init&gt; (1 bytes)
+<writer thread='14575'/>
+<nmethod compile_id='25' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cb3a0' size='872' address='0x000076b6fc6cb210' relocation_offset='336' insts_offset='400' method='java.lang.Class isPrimitive ()Z' bytes='0' count='256' iicount='256' stamp='0.033'/>
+32   25     n 0       java.lang.Class::isPrimitive (native)   
+<task_queued compile_id='26' method='java.util.Objects requireNonNull (Ljava/lang/Object;)Ljava/lang/Object;' bytes='14' count='384' iicount='384' level='3' stamp='0.033' comment='tiered' hot_count='384'/>
+<writer thread='14589'/>
+32   26       3       java.util.Objects::requireNonNull (14 bytes)
+<writer thread='14575'/>
+<task_queued compile_id='27' method='java.lang.invoke.MethodType returnType ()Ljava/lang/Class;' bytes='5' count='128' iicount='128' level='1' stamp='0.033' comment='tiered' hot_count='128'/>
+<writer thread='14589'/>
+                              @ 8   java.lang.NullPointerException::&lt;init&gt; (5 bytes)   failed to inline: don&apos;t inline Throwable constructors
+<writer thread='14575'/>
+<nmethod compile_id='28' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cb700' size='400' address='0x000076b6fc6cb590' relocation_offset='336' insts_offset='368' stub_offset='398' method='java.lang.invoke.MethodHandle invokeBasic (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.033'/>
+32   28     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLLLL)L (native)   
+<writer thread='14588'/>
+<nmethod compile_id='24' compiler='c2' level='4' entry='0x000076b6fc6cba00' size='560' address='0x000076b6fc6cb890' relocation_offset='336' insts_offset='368' stub_offset='480' scopes_data_offset='512' scopes_pcs_offset='520' dependencies_offset='552' metadata_offset='504' method='java.lang.Object &lt;init&gt; ()V' bytes='1' count='1492' iicount='1492' stamp='0.033'/>
+<make_not_entrant thread='14588' compile_id='1' compiler='c1' level='3' stamp='0.033'/>
+33    1       3       java.lang.Object::&lt;init&gt; (1 bytes)   made not entrant
+<writer thread='14589'/>
+<nmethod compile_id='26' compiler='c1' level='3' entry='0x000076b6f4c034c0' size='1064' address='0x000076b6f4c03310' relocation_offset='336' insts_offset='432' stub_offset='856' scopes_data_offset='928' scopes_pcs_offset='960' dependencies_offset='1056' metadata_offset='920' method='java.util.Objects requireNonNull (Ljava/lang/Object;)Ljava/lang/Object;' bytes='14' count='425' iicount='425' stamp='0.033'/>
+<writer thread='14575'/>
+<nmethod compile_id='29' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cbd00' size='400' address='0x000076b6fc6cbb90' relocation_offset='336' insts_offset='368' method='java.lang.invoke.MethodHandle linkToSpecial (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/MemberName;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.033'/>
+33   29     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLLLLLLL)L (native)   (static)
+<writer thread='14588'/>
+<writer thread='14589'/>
+33   27       1       java.lang.invoke.MethodType::returnType (5 bytes)
+<writer thread='14575'/>
+<nmethod compile_id='30' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cc020' size='912' address='0x000076b6fc6cbe90' relocation_offset='336' insts_offset='400' stub_offset='908' method='java.lang.System arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V' bytes='0' count='256' iicount='256' stamp='0.033'/>
+33   30     n 0       java.lang.System::arraycopy (native)   (static)
+<writer thread='14589'/>
+<nmethod compile_id='27' compiler='c1' level='1' entry='0x000076b6fc6cc420' size='640' address='0x000076b6fc6cc290' relocation_offset='336' insts_offset='400' stub_offset='544' scopes_data_offset='592' scopes_pcs_offset='600' dependencies_offset='632' method='java.lang.invoke.MethodType returnType ()Ljava/lang/Class;' bytes='5' count='131' iicount='131' stamp='0.033'/>
+<writer thread='14575'/>
+<task_queued compile_id='31' method='java.lang.ref.ReferenceQueue headIsNull ()Z' bytes='13' count='256' iicount='256' level='3' stamp='0.033' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+33   31       3       java.lang.ref.ReferenceQueue::headIsNull (13 bytes)
+<nmethod compile_id='31' compiler='c1' level='3' entry='0x000076b6f4c03920' size='824' address='0x000076b6f4c03790' relocation_offset='336' insts_offset='400' stub_offset='696' scopes_data_offset='752' scopes_pcs_offset='768' dependencies_offset='816' metadata_offset='744' method='java.lang.ref.ReferenceQueue headIsNull ()Z' bytes='13' count='257' iicount='257' stamp='0.034'/>
+<writer thread='14575'/>
+<task_queued compile_id='32' method='jdk.internal.util.ReferencedKeyMap removeStaleReferences ()V' bytes='30' count='256' iicount='256' level='3' stamp='0.034' comment='tiered' hot_count='256'/>
+<task_queued compile_id='33' method='java.lang.ref.NativeReferenceQueue poll ()Ljava/lang/ref/Reference;' bytes='28' count='256' iicount='256' level='3' stamp='0.034' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+34   32       3       jdk.internal.util.ReferencedKeyMap::removeStaleReferences (30 bytes)
+<writer thread='14575'/>
+<nmethod compile_id='34' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cc700' size='400' address='0x000076b6fc6cc590' relocation_offset='336' insts_offset='368' stub_offset='395' method='java.lang.invoke.MethodHandle linkToSpecial (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/MemberName;)V' bytes='0' count='0' iicount='0' stamp='0.034'/>
+34   34     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLL)V (native)   (static)
+<writer thread='14589'/>
+               !              @ 4   java.lang.ref.ReferenceQueue::poll (40 bytes)   failed to inline: no static binding
+                              @ 20   java.util.Map::remove (0 bytes)   failed to inline: no static binding
+<nmethod compile_id='32' compiler='c1' level='3' entry='0x000076b6f4c03ce0' size='1560' address='0x000076b6f4c03b10' relocation_offset='336' insts_offset='464' stub_offset='1240' scopes_data_offset='1328' scopes_pcs_offset='1384' dependencies_offset='1528' nul_chk_table_offset='1536' metadata_offset='1320' method='jdk.internal.util.ReferencedKeyMap removeStaleReferences ()V' bytes='30' count='273' iicount='273' stamp='0.035'/>
+34   33   !   3       java.lang.ref.NativeReferenceQueue::poll (28 bytes)
+                              @ 1   java.lang.ref.ReferenceQueue::headIsNull (13 bytes)   inline
+                              @ 17   java.lang.ref.ReferenceQueue::poll0 (65 bytes)   failed to inline: callee is too large
+<nmethod compile_id='33' compiler='c1' level='3' entry='0x000076b6f4c04340' size='1528' address='0x000076b6f4c04190' relocation_offset='336' insts_offset='432' stub_offset='1208' scopes_data_offset='1288' scopes_pcs_offset='1368' dependencies_offset='1480' handler_table_offset='1488' nul_chk_table_offset='1512' metadata_offset='1272' method='java.lang.ref.NativeReferenceQueue poll ()Ljava/lang/ref/Reference;' bytes='28' count='273' iicount='273' stamp='0.035'/>
+<writer thread='14575'/>
+<task_queued compile_id='35' method='java.lang.invoke.MethodTypeForm canonicalize (Ljava/lang/Class;I)Ljava/lang/Class;' bytes='74' count='256' iicount='256' level='3' stamp='0.036' comment='tiered' hot_count='256'/>
+<task_queued compile_id='36' method='java.util.concurrent.ConcurrentHashMap get (Ljava/lang/Object;)Ljava/lang/Object;' bytes='162' count='256' backedge_count='1' iicount='256' level='3' stamp='0.036' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+36   36       3       java.util.concurrent.ConcurrentHashMap::get (162 bytes)
+<writer thread='14575'/>
+<nmethod compile_id='37' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cca00' size='400' address='0x000076b6fc6cc890' relocation_offset='336' insts_offset='368' stub_offset='396' method='java.lang.invoke.MethodHandle linkToSpecial (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/MemberName;)V' bytes='0' count='0' iicount='0' stamp='0.036'/>
+36   37     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLLL)V (native)   (static)
+<writer thread='14589'/>
+                              @ 1   java.lang.Object::hashCode (0 bytes)   failed to inline: no static binding
+                              @ 4   java.util.concurrent.ConcurrentHashMap::spread (10 bytes)   inline
+<writer thread='14575'/>
+<nmethod compile_id='38' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6ccd00' size='400' address='0x000076b6fc6ccb90' relocation_offset='336' insts_offset='368' stub_offset='398' method='java.lang.invoke.MethodHandle invokeBasic (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.037'/>
+36   38     n 0       java.lang.invoke.MethodHandle::invokeBasic(LL)L (native)   
+<writer thread='14589'/>
+                              @ 34   java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)   failed to inline: callee uses too much stack
+<writer thread='14575'/>
+<nmethod compile_id='39' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cd000' size='400' address='0x000076b6fc6cce90' relocation_offset='336' insts_offset='368' stub_offset='396' method='java.lang.invoke.MethodHandle linkToSpecial (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/MemberName;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.037'/>
+36   39     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLLL)L (native)   (static)
+<writer thread='14589'/>
+                              @ 73   java.lang.Object::equals (11 bytes)   failed to inline: no static binding
+                              @ 93   java.util.concurrent.ConcurrentHashMap$Node::find (52 bytes)   failed to inline: no static binding
+                              @ 149   java.lang.Object::equals (11 bytes)   failed to inline: no static binding
+<nmethod compile_id='36' compiler='c1' level='3' entry='0x000076b6f4c04a60' size='3920' address='0x000076b6f4c04810' relocation_offset='336' insts_offset='592' stub_offset='3088' scopes_data_offset='3232' scopes_pcs_offset='3520' dependencies_offset='3856' nul_chk_table_offset='3864' metadata_offset='3216' method='java.util.concurrent.ConcurrentHashMap get (Ljava/lang/Object;)Ljava/lang/Object;' bytes='162' count='263' backedge_count='1' iicount='263' stamp='0.037'/>
+37   35       3       java.lang.invoke.MethodTypeForm::canonicalize (74 bytes)
+                              @ 10   java.lang.Class::isPrimitive (0 bytes)   intrinsic
+                              @ 45   sun.invoke.util.Wrapper::asPrimitiveType (20 bytes)   inline
+                                @ 1   sun.invoke.util.Wrapper::findWrapperType (102 bytes)   failed to inline: callee is too large
+                                @ 10   sun.invoke.util.Wrapper::primitiveType (5 bytes)   inline
+                                @ 14   sun.invoke.util.Wrapper::forceType (72 bytes)   failed to inline: callee is too large
+                              @ 68   sun.invoke.util.Wrapper::asWrapperType (18 bytes)   inline
+                                @ 1   java.lang.Class::isPrimitive (0 bytes)   intrinsic
+                                @ 8   sun.invoke.util.Wrapper::forPrimitiveType (122 bytes)   failed to inline: callee is too large
+                                @ 12   sun.invoke.util.Wrapper::wrapperType (52 bytes)   failed to inline: callee is too large
+<nmethod compile_id='35' compiler='c1' level='3' entry='0x000076b6f4c059c0' size='2376' address='0x000076b6f4c05790' relocation_offset='336' insts_offset='560' stub_offset='1880' scopes_data_offset='2008' scopes_pcs_offset='2144' dependencies_offset='2336' nul_chk_table_offset='2344' metadata_offset='1984' method='java.lang.invoke.MethodTypeForm canonicalize (Ljava/lang/Class;I)Ljava/lang/Class;' bytes='74' count='268' iicount='268' stamp='0.038'/>
+<writer thread='14575'/>
+<task_queued compile_id='40' method='java.lang.invoke.MethodType hashCode ()I' bytes='53' count='256' backedge_count='722' iicount='256' level='3' stamp='0.039' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+38   40       3       java.lang.invoke.MethodType::hashCode (53 bytes)
+<writer thread='14575'/>
+<task_queued compile_id='41' method='java.lang.invoke.MemberName getDeclaringClass ()Ljava/lang/Class;' bytes='5' count='128' iicount='128' level='1' stamp='0.039' comment='tiered' hot_count='128'/>
+<task_queued compile_id='42' method='java.lang.Math min (II)I' bytes='11' count='256' iicount='256' level='3' stamp='0.039' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+                              @ 6   java.lang.Object::hashCode (0 bytes)   failed to inline: native method
+                              @ 40   java.lang.Object::hashCode (0 bytes)   failed to inline: native method
+<writer thread='14575'/>
+<nmethod compile_id='43' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cd300' size='400' address='0x000076b6fc6cd190' relocation_offset='336' insts_offset='368' stub_offset='395' method='java.lang.invoke.MethodHandle linkToSpecial (Ljava/lang/Object;Ljava/lang/invoke/MemberName;)V' bytes='0' count='0' iicount='0' stamp='0.039'/>
+38   43     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LL)V (native)   (static)
+<writer thread='14589'/>
+<nmethod compile_id='40' compiler='c1' level='3' entry='0x000076b6f4c062c0' size='1648' address='0x000076b6f4c06110' relocation_offset='336' insts_offset='432' stub_offset='1232' scopes_data_offset='1320' scopes_pcs_offset='1448' dependencies_offset='1608' nul_chk_table_offset='1616' metadata_offset='1312' method='java.lang.invoke.MethodType hashCode ()I' bytes='53' count='269' backedge_count='733' iicount='269' stamp='0.039'/>
+38   42       3       java.lang.Math::min (11 bytes)
+<nmethod compile_id='42' compiler='c1' level='3' entry='0x000076b6f4c06920' size='784' address='0x000076b6f4c06790' relocation_offset='336' insts_offset='400' stub_offset='656' scopes_data_offset='712' scopes_pcs_offset='728' dependencies_offset='776' metadata_offset='704' method='java.lang.Math min (II)I' bytes='11' count='271' iicount='271' stamp='0.039'/>
+<writer thread='14575'/>
+<task_queued compile_id='44' method='java.lang.invoke.MethodType checkSlotCount (I)V' bytes='33' count='256' iicount='256' level='3' stamp='0.039' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+39   44       3       java.lang.invoke.MethodType::checkSlotCount (33 bytes)
+                              @ 13   java.lang.StringBuilder::&lt;init&gt; (7 bytes)   inline
+                                @ 3   java.lang.AbstractStringBuilder::&lt;init&gt; (39 bytes)   failed to inline: callee is too large
+                              @ 18   java.lang.StringBuilder::append (8 bytes)   inline
+                                @ 2   java.lang.AbstractStringBuilder::append (45 bytes)   failed to inline: callee is too large
+                              @ 22   java.lang.StringBuilder::append (8 bytes)   inline
+                                @ 2   java.lang.AbstractStringBuilder::append (55 bytes)   failed to inline: callee is too large
+                              @ 25   java.lang.StringBuilder::toString (20 bytes)   inline
+                                @ 1   java.lang.StringBuilder::length (5 bytes)   inline
+                                  @ 1   java.lang.AbstractStringBuilder::length (5 bytes)   inline
+                                @ 16   java.lang.String::&lt;init&gt; (98 bytes)   failed to inline: callee is too large
+                              
+<writer thread='14575'/>
+<task_queued compile_id='45' method='java.lang.invoke.MemberName isInvocable ()Z' bytes='8' count='256' iicount='256' level='3' stamp='0.040' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+@ 28   java.lang.invoke.MethodHandleStatics::newIllegalArgumentException (9 bytes)   inline
+                                @ 5   java.lang.IllegalArgumentException::&lt;init&gt; (6 bytes)   failed to inline: don&apos;t inline Throwable constructors
+<nmethod compile_id='44' compiler='c1' level='3' entry='0x000076b6f4c06d40' size='2744' address='0x000076b6f4c06b10' relocation_offset='336' insts_offset='560' stub_offset='2072' scopes_data_offset='2264' scopes_pcs_offset='2448' dependencies_offset='2736' oops_offset='2200' metadata_offset='2208' method='java.lang.invoke.MethodType checkSlotCount (I)V' bytes='33' count='270' iicount='270' stamp='0.040'/>
+39   41       1       java.lang.invoke.MemberName::getDeclaringClass (5 bytes)
+<nmethod compile_id='41' compiler='c1' level='1' entry='0x000076b6fc6cd620' size='640' address='0x000076b6fc6cd490' relocation_offset='336' insts_offset='400' stub_offset='544' scopes_data_offset='592' scopes_pcs_offset='600' dependencies_offset='632' method='java.lang.invoke.MemberName getDeclaringClass ()Ljava/lang/Class;' bytes='5' count='145' iicount='145' stamp='0.040'/>
+40   45       3       java.lang.invoke.MemberName::isInvocable (8 bytes)
+                              @ 4   java.lang.invoke.MemberName::anyFlagSet (15 bytes)   inline
+<nmethod compile_id='45' compiler='c1' level='3' entry='0x000076b6f4c077a0' size='976' address='0x000076b6f4c07610' relocation_offset='336' insts_offset='400' stub_offset='800' scopes_data_offset='864' scopes_pcs_offset='904' dependencies_offset='968' metadata_offset='848' method='java.lang.invoke.MemberName isInvocable ()Z' bytes='8' count='260' iicount='260' stamp='0.040'/>
+<writer thread='14575'/>
+<task_queued compile_id='46' method='jdk.internal.util.ArraysSupport signedHashCode (I[BII)I' bytes='37' count='128' backedge_count='2789' iicount='128' level='3' stamp='0.042' comment='tiered' hot_count='128'/>
+<writer thread='14589'/>
+42   46       3       jdk.internal.util.ArraysSupport::signedHashCode (37 bytes)
+<writer thread='14575'/>
+<task_queued compile_id='47' compile_kind='osr' method='java.util.Properties$LineReader readLine ()I' bytes='584' count='48' backedge_count='60416' iicount='48' osr_bci='224' level='3' stamp='0.042' comment='tiered' hot_count='60416'/>
+<nmethod compile_id='48' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cd920' size='944' address='0x000076b6fc6cd790' relocation_offset='336' insts_offset='400' method='jdk.internal.misc.Unsafe compareAndSetReference (Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z' bytes='0' count='256' iicount='256' stamp='0.042'/>
+42   48     n 0       jdk.internal.misc.Unsafe::compareAndSetReference (native)   
+<task_queued compile_id='49' method='java.util.concurrent.ConcurrentHashMap casTabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;ILjava/util/concurrent/ConcurrentHashMap$Node;Ljava/util/concurrent/ConcurrentHashMap$Node;)Z' bytes='21' count='256' iicount='256' level='3' stamp='0.042' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+<nmethod compile_id='46' compiler='c1' level='3' entry='0x000076b6f4c07ba0' size='1080' address='0x000076b6f4c07a10' relocation_offset='336' insts_offset='400' stub_offset='800' scopes_data_offset='856' scopes_pcs_offset='920' dependencies_offset='1048' nul_chk_table_offset='1056' metadata_offset='848' method='jdk.internal.util.ArraysSupport signedHashCode (I[BII)I' bytes='37' count='131' backedge_count='2900' iicount='131' stamp='0.042'/>
+43   47 %     3       java.util.Properties$LineReader::readLine @ 224 (584 bytes)
+<writer thread='14575'/>
+<nmethod compile_id='50' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cdd00' size='392' address='0x000076b6fc6cdb90' relocation_offset='336' insts_offset='368' method='java.lang.invoke.MethodHandle linkToStatic (Ljava/lang/Object;Ljava/lang/invoke/MemberName;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.044'/>
+43   50     n 0       java.lang.invoke.MethodHandle::linkToStatic(LL)L (native)   (static)
+<writer thread='14589'/>
+                              @ 70   java.io.InputStream::read (9 bytes)   failed to inline: no static binding
+                              @ 82  java/io/Reader::read (not loaded)   failed to inline: not inlineable
+<writer thread='14575'/>
+<task_queued compile_id='51' method='java.lang.AbstractStringBuilder length ()I' bytes='5' count='128' iicount='128' level='1' stamp='0.044' comment='tiered' hot_count='128'/>
+<writer thread='14589'/>
+                              @ 274   java.io.InputStream::read (9 bytes)   failed to inline: no static binding
+                              @ 343  java/io/Reader::read (not loaded)   failed to inline: not inlineable
+                              @ 401   jdk.internal.util.ArraysSupport::newLength (27 bytes)   inline
+                                @ 3   java.lang.Math::max (11 bytes)   inline
+                                @ 23   jdk.internal.util.ArraysSupport::hugeLength (60 bytes)   failed to inline: callee is too large
+                              @ 417   java.lang.System::arraycopy (0 bytes)   intrinsic
+<writer thread='14575'/>
+<task_queued compile_id='52' method='java.lang.invoke.MethodType form ()Ljava/lang/invoke/MethodTypeForm;' bytes='5' count='128' iicount='128' level='1' stamp='0.045' comment='tiered' hot_count='128'/>
+<writer thread='14589'/>
+                              @ 479   java.io.InputStream::read (9 bytes)   failed to inline: no static binding
+                              @ 491  java/io/Reader::read (not loaded)   failed to inline: not inlineable
+<writer thread='14575'/>
+<nmethod compile_id='53' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6ce000' size='400' address='0x000076b6fc6cde90' relocation_offset='336' insts_offset='368' stub_offset='396' method='java.lang.invoke.MethodHandle linkToSpecial (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/MemberName;)V' bytes='0' count='0' iicount='0' stamp='0.046'/>
+45   53     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLLLL)V (native)   (static)
+<nmethod compile_id='54' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6ce300' size='400' address='0x000076b6fc6ce190' relocation_offset='336' insts_offset='368' stub_offset='398' method='java.lang.invoke.MethodHandle invokeBasic (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.046'/>
+45   54     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLL)L (native)   
+<nmethod compile_id='55' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6ce600' size='400' address='0x000076b6fc6ce490' relocation_offset='336' insts_offset='368' stub_offset='396' method='java.lang.invoke.MethodHandle linkToSpecial (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/MemberName;)Ljava/lang/Object;' bytes='0' count='0' iicount='0' stamp='0.046'/>
+45   55     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLLLL)L (native)   (static)
+<writer thread='14589'/>
+<nmethod compile_id='47' compile_kind='osr' compiler='c1' level='3' entry='0x000076b6f4c08260' size='14712' address='0x000076b6f4c07e90' relocation_offset='336' insts_offset='976' stub_offset='11368' scopes_data_offset='11568' scopes_pcs_offset='13088' dependencies_offset='14496' nul_chk_table_offset='14504' metadata_offset='11544' method='java.util.Properties$LineReader readLine ()I' bytes='584' count='48' backedge_count='62845' iicount='48' stamp='0.047'/>
+47   51       1       java.lang.AbstractStringBuilder::length (5 bytes)
+<nmethod compile_id='51' compiler='c1' level='1' entry='0x000076b6fc6ce920' size='640' address='0x000076b6fc6ce790' relocation_offset='336' insts_offset='400' stub_offset='544' scopes_data_offset='592' scopes_pcs_offset='600' dependencies_offset='632' method='java.lang.AbstractStringBuilder length ()I' bytes='5' count='176' iicount='176' stamp='0.047'/>
+47   49       3       java.util.concurrent.ConcurrentHashMap::casTabAt (21 bytes)
+                              @ 17   jdk.internal.misc.Unsafe::compareAndSetReference (0 bytes)   intrinsic
+<nmethod compile_id='49' compiler='c1' level='3' entry='0x000076b6f4c0ba20' size='840' address='0x000076b6f4c0b890' relocation_offset='336' insts_offset='400' stub_offset='704' scopes_data_offset='760' scopes_pcs_offset='784' dependencies_offset='832' metadata_offset='752' method='java.util.concurrent.ConcurrentHashMap casTabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;ILjava/util/concurrent/ConcurrentHashMap$Node;Ljava/util/concurrent/ConcurrentHashMap$Node;)Z' bytes='21' count='369' iicount='369' stamp='0.048'/>
+47   52       1       java.lang.invoke.MethodType::form (5 bytes)
+<writer thread='14575'/>
+<task_queued compile_id='56' method='java.util.concurrent.ConcurrentHashMap addCount (JI)V' bytes='280' count='256' backedge_count='2' iicount='256' level='3' stamp='0.048' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+<nmethod compile_id='52' compiler='c1' level='1' entry='0x000076b6fc6cec20' size='640' address='0x000076b6fc6cea90' relocation_offset='336' insts_offset='400' stub_offset='544' scopes_data_offset='592' scopes_pcs_offset='600' dependencies_offset='632' method='java.lang.invoke.MethodType form ()Ljava/lang/invoke/MethodTypeForm;' bytes='5' count='149' iicount='149' stamp='0.048'/>
+47   56       3       java.util.concurrent.ConcurrentHashMap::addCount (280 bytes)
+                              @ 31   jdk.internal.misc.Unsafe::compareAndSetLong (0 bytes)   intrinsic
+                              @ 58  java/util/concurrent/ThreadLocalRandom::getProbe (not loaded)   failed to inline: not inlineable
+                              @ 91   jdk.internal.misc.Unsafe::compareAndSetLong (0 bytes)   intrinsic
+                              @ 115   java.util.concurrent.ConcurrentHashMap::sumCount (60 bytes)   failed to inline: callee is too large
+                              @ 161   java.util.concurrent.ConcurrentHashMap::resizeStamp (9 bytes)   inline
+                                @ 1   java.lang.Integer::numberOfLeadingZeros (79 bytes)   failed to inline: callee is too large
+                              @ 227   jdk.internal.misc.Unsafe::compareAndSetInt (0 bytes)   intrinsic
+               !m             @ 238   java.util.concurrent.ConcurrentHashMap::transfer (849 bytes)   failed to inline: callee is too large
+                              @ 257   jdk.internal.misc.Unsafe::compareAndSetInt (0 bytes)   intrinsic
+               !m             @ 267   java.util.concurrent.ConcurrentHashMap::transfer (849 bytes)   failed to inline: callee is too large
+                              @ 271   java.util.concurrent.ConcurrentHashMap::sumCount (60 bytes)   failed to inline: callee is too large
+               !              @ 104   java.util.concurrent.ConcurrentHashMap::fullAddCount (462 bytes)   failed to inline: callee is too large
+<nmethod compile_id='56' compiler='c1' level='3' entry='0x000076b6f4c0be60' size='3488' address='0x000076b6f4c0bc10' relocation_offset='336' insts_offset='592' stub_offset='2704' scopes_data_offset='2848' scopes_pcs_offset='3176' dependencies_offset='3448' nul_chk_table_offset='3456' metadata_offset='2832' method='java.util.concurrent.ConcurrentHashMap addCount (JI)V' bytes='280' count='265' backedge_count='2' iicount='265' stamp='0.049'/>
+<writer thread='14575'/>
+<task_queued compile_id='57' method='java.lang.invoke.MethodType ptypes ()[Ljava/lang/Class;' bytes='5' count='128' iicount='128' level='1' stamp='0.049' comment='tiered' hot_count='128'/>
+<writer thread='14589'/>
+49   57       1       java.lang.invoke.MethodType::ptypes (5 bytes)
+<nmethod compile_id='57' compiler='c1' level='1' entry='0x000076b6fc6cef20' size='640' address='0x000076b6fc6ced90' relocation_offset='336' insts_offset='400' stub_offset='544' scopes_data_offset='592' scopes_pcs_offset='600' dependencies_offset='632' method='java.lang.invoke.MethodType ptypes ()[Ljava/lang/Class;' bytes='5' count='129' iicount='129' stamp='0.049'/>
+<writer thread='14575'/>
+<task_queued compile_id='58' method='java.util.concurrent.ConcurrentHashMap putVal (Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;' bytes='432' count='256' backedge_count='21' iicount='256' level='3' stamp='0.049' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+49   58   !   3       java.util.concurrent.ConcurrentHashMap::putVal (432 bytes)
+<writer thread='14575'/>
+<nmethod compile_id='59' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cf220' size='1624' address='0x000076b6fc6cf090' relocation_offset='336' insts_offset='400' stub_offset='1617' method='java.lang.Object clone ()Ljava/lang/Object;' bytes='0' count='256' iicount='256' stamp='0.050'/>
+49   59     n 0       java.lang.Object::clone (native)   
+<writer thread='14589'/>
+                              @ 17   java.lang.Object::hashCode (0 bytes)   failed to inline: no static binding
+                              @ 20   java.util.concurrent.ConcurrentHashMap::spread (10 bytes)   inline
+<writer thread='14575'/>
+<task_queued compile_id='60' method='jdk.internal.org.objectweb.asm.SymbolTable get (I)Ljdk/internal/org/objectweb/asm/SymbolTable$Entry;' bytes='13' count='256' iicount='256' level='3' stamp='0.050' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+                              @ 69   java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)   failed to inline: callee uses too much stack
+                              @ 91   java.util.concurrent.ConcurrentHashMap$Node::&lt;init&gt; (20 bytes)   inline
+                                @ 1   java.lang.Object::&lt;init&gt; (1 bytes)   inline
+                              @ 94   java.util.concurrent.ConcurrentHashMap::casTabAt (21 bytes)   failed to inline: callee uses too much stack
+                              @ 120   java.util.concurrent.ConcurrentHashMap::helpTransfer (124 bytes)   failed to inline: callee is too large
+                              @ 159   java.lang.Object::equals (11 bytes)   failed to inline: no static binding
+<writer thread='14575'/>
+<task_queued compile_id='61' method='jdk.internal.util.ReferencedKeyMap get (Ljava/lang/Object;)Ljava/lang/Object;' bytes='26' count='256' iicount='256' level='3' stamp='0.050' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+                              @ 192   java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)   failed to inline: callee uses too much stack
+                              @ 242   java.lang.Object::equals (11 bytes)   failed to inline: no static binding
+                              @ 293   java.util.concurrent.ConcurrentHashMap$Node::&lt;init&gt; (20 bytes)   inline
+                                @ 1   java.lang.Object::&lt;init&gt; (1 bytes)   inline
+                              @ 331  java/util/concurrent/ConcurrentHashMap$TreeBin::putTreeVal (not loaded)   failed to inline: not inlineable
+                              @ 374  java/lang/IllegalStateException::&lt;init&gt; (not loaded)   failed to inline: not inlineable
+               !m             @ 409   java.util.concurrent.ConcurrentHashMap::treeifyBin (164 bytes)   failed to inline: callee is too large
+                              @ 427   java.util.concurrent.ConcurrentHashMap::addCount (280 bytes)   failed to inline: callee is too large
+               !              @ 49   java.util.concurrent.ConcurrentHashMap::initTable (112 bytes)   failed to inline: callee is too large
+                              @ 12   java.lang.NullPointerException::&lt;init&gt; (5 bytes)   failed to inline: don&apos;t inline Throwable constructors
+<writer thread='14575'/>
+<task_queued compile_id='62' method='java.lang.String equals (Ljava/lang/Object;)Z' bytes='56' count='384' iicount='384' level='3' stamp='0.051' comment='tiered' hot_count='384'/>
+<task_queued compile_id='63' method='java.lang.AbstractStringBuilder ensureCapacityInternal (I)V' bytes='39' count='384' iicount='384' level='3' stamp='0.051' comment='tiered' hot_count='384'/>
+<writer thread='14589'/>
+<nmethod compile_id='58' compiler='c1' level='3' entry='0x000076b6f4c0cd80' size='9936' address='0x000076b6f4c0ca10' relocation_offset='336' insts_offset='880' stub_offset='7288' scopes_data_offset='7552' scopes_pcs_offset='8912' dependencies_offset='9568' handler_table_offset='9576' nul_chk_table_offset='9888' metadata_offset='7520' method='java.util.concurrent.ConcurrentHashMap putVal (Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;' bytes='432' count='259' backedge_count='21' iicount='259' stamp='0.052'/>
+51   62       3       java.lang.String::equals (56 bytes)
+                              @ 44   java.lang.StringLatin1::equals (36 bytes)   failed to inline: callee is too large
+<nmethod compile_id='62' compiler='c1' level='3' entry='0x000076b6f4c0f2c0' size='1640' address='0x000076b6f4c0f110' relocation_offset='336' insts_offset='432' stub_offset='1408' scopes_data_offset='1480' scopes_pcs_offset='1520' dependencies_offset='1616' nul_chk_table_offset='1624' metadata_offset='1472' method='java.lang.String equals (Ljava/lang/Object;)Z' bytes='56' count='391' iicount='391' stamp='0.052'/>
+52   61       3       jdk.internal.util.ReferencedKeyMap::get (26 bytes)
+                              @ 3   java.util.Objects::requireNonNull (15 bytes)   force inline by annotation
+                                @ 9   java.lang.NullPointerException::&lt;init&gt; (6 bytes)   failed to inline: don&apos;t inline Throwable constructors
+                              @ 8   jdk.internal.util.ReferencedKeyMap::removeStaleReferences (30 bytes)   inline
+               !                @ 4   java.lang.ref.ReferenceQueue::poll (40 bytes)   failed to inline: no static binding
+                                @ 20   java.util.Map::remove (0 bytes)   failed to inline: no static binding
+                              @ 17   jdk.internal.util.ReferencedKeyMap::lookupKey (9 bytes)   inline
+                                @ 5   jdk.internal.util.StrongReferenceKey::&lt;init&gt; (10 bytes)   inline
+                                  @ 1   java.lang.Object::&lt;init&gt; (1 bytes)   inline
+                              @ 20   java.util.Map::get (0 bytes)   failed to inline: no static binding
+<nmethod compile_id='61' compiler='c1' level='3' entry='0x000076b6f4c0f9c0' size='3192' address='0x000076b6f4c0f790' relocation_offset='336' insts_offset='560' stub_offset='2448' scopes_data_offset='2616' scopes_pcs_offset='2832' dependencies_offset='3152' nul_chk_table_offset='3160' oops_offset='2560' metadata_offset='2568' method='jdk.internal.util.ReferencedKeyMap get (Ljava/lang/Object;)Ljava/lang/Object;' bytes='26' count='257' iicount='257' stamp='0.053'/>
+53   60       3       jdk.internal.org.objectweb.asm.SymbolTable::get (13 bytes)
+<nmethod compile_id='60' compiler='c1' level='3' entry='0x000076b6f4c10620' size='912' address='0x000076b6f4c10490' relocation_offset='336' insts_offset='400' stub_offset='688' scopes_data_offset='744' scopes_pcs_offset='784' dependencies_offset='880' nul_chk_table_offset='888' metadata_offset='736' method='jdk.internal.org.objectweb.asm.SymbolTable get (I)Ljdk/internal/org/objectweb/asm/SymbolTable$Entry;' bytes='13' count='266' iicount='266' stamp='0.054'/>
+53   63       3       java.lang.AbstractStringBuilder::ensureCapacityInternal (39 bytes)
+                              @ 24   java.lang.AbstractStringBuilder::newCapacity (59 bytes)   failed to inline: callee is too large
+                              @ 32   java.util.Arrays::copyOf (33 bytes)   failed to inline: callee uses too much stack
+<nmethod compile_id='63' compiler='c1' level='3' entry='0x000076b6f4c10a40' size='1168' address='0x000076b6f4c10890' relocation_offset='336' insts_offset='432' stub_offset='904' scopes_data_offset='984' scopes_pcs_offset='1048' dependencies_offset='1144' nul_chk_table_offset='1152' metadata_offset='976' method='java.lang.AbstractStringBuilder ensureCapacityInternal (I)V' bytes='39' count='386' iicount='386' stamp='0.054'/>
+<writer thread='14575'/>
+<task_queued compile_id='64' method='java.lang.ref.Reference reachabilityFence (Ljava/lang/Object;)V' bytes='1' count='256' iicount='256' level='3' stamp='0.055' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+54   64       3       java.lang.ref.Reference::reachabilityFence (1 bytes)
+<nmethod compile_id='64' compiler='c1' level='3' entry='0x000076b6f4c10f20' size='704' address='0x000076b6f4c10d90' relocation_offset='336' insts_offset='400' stub_offset='576' scopes_data_offset='632' scopes_pcs_offset='648' dependencies_offset='696' metadata_offset='624' method='java.lang.ref.Reference reachabilityFence (Ljava/lang/Object;)V' bytes='1' count='536' iicount='536' stamp='0.055'/>
+<writer thread='14575'/>
+<task_queued compile_id='65' method='java.nio.Buffer session ()Ljdk/internal/foreign/MemorySessionImpl;' bytes='20' count='256' iicount='256' level='3' stamp='0.055' comment='tiered' hot_count='256'/>
+<task_queued compile_id='66' method='java.nio.Buffer checkIndex (I)I' bytes='12' count='256' iicount='256' level='3' stamp='0.055' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+54   65       3       java.nio.Buffer::session (20 bytes)
+<writer thread='14575'/>
+<task_queued compile_id='67' method='java.nio.DirectByteBuffer get (I)B' bytes='34' count='256' iicount='256' level='3' stamp='0.055' comment='tiered' hot_count='256'/>
+<writer thread='14589'/>
+                              @ 14  jdk/internal/foreign/AbstractMemorySegmentImpl::sessionImpl (not loaded)   failed to inline: not inlineable
+<nmethod compile_id='65' compiler='c1' level='3' entry='0x000076b6f4c11240' size='1264' address='0x000076b6f4c11090' relocation_offset='336' insts_offset='432' stub_offset='1056' scopes_data_offset='1128' scopes_pcs_offset='1160' dependencies_offset='1256' metadata_offset='1120' method='java.nio.Buffer session ()Ljdk/internal/foreign/MemorySessionImpl;' bytes='20' count='377' iicount='377' stamp='0.055'/>
+55   66       3       java.nio.Buffer::checkIndex (12 bytes)
+<writer thread='14575'/>
+<task_queued compile_id='68' method='java.lang.String charAt (I)C' bytes='25' count='5567' iicount='5567' stamp='0.055' comment='tiered' hot_count='5567'/>
+<task_queued compile_id='69' method='java.nio.DirectByteBuffer ix (I)J' bytes='10' count='384' iicount='384' level='3' stamp='0.055' comment='tiered' hot_count='384'/>
+<task_queued compile_id='70' method='jdk.internal.misc.ScopedMemoryAccess getByte (Ljdk/internal/foreign/MemorySessionImpl;Ljava/lang/Object;J)B' bytes='16' count='384' iicount='384' level='3' stamp='0.055' comment='tiered' hot_count='384'/>
+<task_queued compile_id='71' method='jdk.internal.misc.ScopedMemoryAccess getByteInternal (Ljdk/internal/foreign/MemorySessionImpl;Ljava/lang/Object;J)B' bytes='34' count='384' iicount='384' level='3' stamp='0.055' comment='tiered' hot_count='384'/>
+<writer thread='14588'/>
+55   68       4       java.lang.String::charAt (25 bytes)
+<writer thread='14575'/>
+<nmethod compile_id='72' compile_kind='c2n' compiler='' level='0' entry='0x000076b6fc6cf8a0' size='896' address='0x000076b6fc6cf710' relocation_offset='336' insts_offset='400' stub_offset='891' method='jdk.internal.misc.Unsafe getByte (Ljava/lang/Object;J)B' bytes='0' count='384' iicount='384' stamp='0.055'/>
+55   72     n 0       jdk.internal.misc.Unsafe::getByte (native)   
+<writer thread='14589'/>
+                              @ 8   jdk.internal.util.Preconditions::checkIndex (18 bytes)   intrinsic
+<nmethod compile_id='66' compiler='c1' level='3' entry='0x000076b6f4c11720' size='880' address='0x000076b6f4c11590' relocation_offset='336' insts_offset='400' stub_offset='696' scopes_data_offset='760' scopes_pcs_offset='792' dependencies_offset='872' oops_offset='744' metadata_offset='752' method='java.nio.Buffer checkIndex (I)I' bytes='12' count='531' iicount='531' stamp='0.055'/>
+55   69       3       java.nio.DirectByteBuffer::ix (10 bytes)
+<nmethod compile_id='69' compiler='c1' level='3' entry='0x000076b6f4c11aa0' size='752' address='0x000076b6f4c11910' relocation_offset='336' insts_offset='400' stub_offset='624' scopes_data_offset='680' scopes_pcs_offset='696' dependencies_offset='744' metadata_offset='672' method='java.nio.DirectByteBuffer ix (I)J' bytes='10' count='545' iicount='546' stamp='0.056'/>
+55   67   !   3       java.nio.DirectByteBuffer::get (34 bytes)
+<writer thread='14575'/>
+<task_queued compile_id='73' method='java.util.concurrent.ConcurrentHashMap$Node &lt;init&gt; (ILjava/lang/Object;Ljava/lang/Object;)V' bytes='20' count='411' iicount='411' level='3' stamp='0.056' comment='tiered' hot_count='411'/>
+<writer thread='14589'/>
+                              @ 4   java.nio.Buffer::session (20 bytes)   force inline by annotation
+<writer thread='14575'/>
+<task_queued compile_id='74' method='java.lang.ref.Reference reachabilityFence (Ljava/lang/Object;)V' bytes='1' count='1489' iicount='1489' stamp='0.056' comment='tiered' hot_count='1489'/>
+<writer thread='14589'/>
+                                @ 14  jdk/internal/foreign/AbstractMemorySegmentImpl::sessionImpl (not loaded)   failed to inline: not inlineable
+                              @ 11   java.nio.Buffer::checkIndex (12 bytes)   force inline by annotation
+<writer thread='14575'/>
+<task_queued compile_id='75' method='java.nio.Buffer limit ()I' bytes='5' count='128' iicount='128' level='1' stamp='0.056' comment='tiered' hot_count='128'/>
+<writer thread='14589'/>
+                                @ 8   jdk.internal.util.Preconditions::checkIndex (18 bytes)   intrinsic
+                              @ 14   java.nio.DirectByteBuffer::ix (10 bytes)   failed to inline: callee uses too much stack
+               !              @ 17   jdk.internal.misc.ScopedMemoryAccess::getByte (16 bytes)   force inline by annotation
+<writer thread='14588'/>
+<nmethod compile_id='68' compiler='c2' level='4' entry='0x000076b6fc6cfca0' size='920' address='0x000076b6fc6cfb10' relocation_offset='336' insts_offset='400' stub_offset='648' scopes_data_offset='712' scopes_pcs_offset='800' dependencies_offset='896' nul_chk_table_offset='904' oops_offset='672' metadata_offset='680' method='java.lang.String charAt (I)C' bytes='25' count='8452' iicount='8452' stamp='0.057'/>
+<make_not_entrant thread='14588' compile_id='15' compiler='c1' level='3' stamp='0.057'/>
+56   15       3       java.lang.String::charAt (25 bytes)   made not entrant
+                              @ 1   java.lang.String::isLatin1 (19 bytes)   inline (hot)
+                              @ 12   java.lang.StringLatin1::charAt (15 bytes)   inline (hot)
+                                @ 3   java.lang.String::checkIndex (10 bytes)   inline (hot)
+                                  @ 5   jdk.internal.util.Preconditions::checkIndex (18 bytes)   (intrinsic)
+<writer thread='14589'/>
+               !                @ 4  
+<writer thread='14588'/>
+56   74       4       java.lang.ref.Reference::reachabilityFence (1 bytes)
+<writer thread='14589'/>
+ jdk.internal.misc.ScopedMemoryAccess::getByteInternal (34 bytes)   force inline by annotation
+                                  @ 5  jdk/internal/foreign/MemorySessionImpl::checkValidStateRaw (not loaded)   failed to inline: not inlineable
+                                  @ 13   jdk.internal.misc.Unsafe::getByte (0 bytes)   intrinsic
+                                  @ 28   java.lang.ref.Reference::reachabilityFence (1 bytes)   force inline by annotation
+<writer thread='14588'/>
+<nmethod compile_id='74' compiler='c2' level='4' entry='0x000076b6fc6d0080' size='520' address='0x000076b6fc6cff10' relocation_offset='336' insts_offset='368' stub_offset='448' scopes_data_offset='472' scopes_pcs_offset='480' dependencies_offset='512' method='java.lang.ref.Reference reachabilityFence (Ljava/lang/Object;)V' bytes='1' count='2088' iicount='2088' stamp='0.057'/>
+<make_not_entrant thread='14588' compile_id='64' compiler='c1' level='3' stamp='0.057'/>
+56   64       3       java.lang.ref.Reference::reachabilityFence (1 bytes)   made not entrant
+<writer thread='14589'/>
+                                  @ 19   java.lang.ref.Reference::reachabilityFence (1 bytes)   force inline by annotation
+                                @ 12  jdk/internal/misc/ScopedMemoryAccess$ScopedAccessError::newRuntimeException (not loaded)   failed to inline: not inlineable
+                              @ 29   java.lang.ref.Reference::reachabilityFence (1 bytes)   force inline by annotation
+                              @ 22   java.lang.ref.Reference::reachabilityFence (1 bytes)   force inline by annotation
+<nmethod compile_id='67' compiler='c1' level='3' entry='0x000076b6f4c11e60' size='4016' address='0x000076b6f4c11c10' relocation_offset='336' insts_offset='592' stub_offset='2776' scopes_data_offset='2960' scopes_pcs_offset='3360' dependencies_offset='3712' handler_table_offset='3720' nul_chk_table_offset='4000' oops_offset='2888' metadata_offset='2904' method='java.nio.DirectByteBuffer get (I)B' bytes='34' count='883' iicount='883' stamp='0.058'/>
+58   70   !   3       jdk.internal.misc.ScopedMemoryAccess::getByte (16 bytes)
+               !              @ 4   jdk.internal.misc.ScopedMemoryAccess::getByteInternal (34 bytes)   force inline by annotation
+                                @ 5  jdk/internal/foreign/MemorySessionImpl::checkValidStateRaw (not loaded)   failed to inline: not inlineable
+                                @ 13   jdk.internal.misc.Unsafe::getByte (0 bytes)   intrinsic
+                                @ 28   java.lang.ref.Reference::reachabilityFence (1 bytes)   force inline by annotation
+                                @ 19   java.lang.ref.Reference::reachabilityFence (1 bytes)   force inline by annotation
+                              @ 12  jdk/internal/misc/ScopedMemoryAccess$ScopedAccessError::newRuntimeException (not loaded)   failed to inline: not inlineable
+<nmethod compile_id='70' compiler='c1' level='3' entry='0x000076b6f4c12de0' size='1896' address='0x000076b6f4c12c10' relocation_offset='336' insts_offset='464' stub_offset='1368' scopes_data_offset='1480' scopes_pcs_offset='1664' dependencies_offset='1824' handler_table_offset='1832' nul_chk_table_offset='1880' metadata_offset='1448' method='jdk.internal.misc.ScopedMemoryAccess getByte (Ljdk/internal/foreign/MemorySessionImpl;Ljava/lang/Object;J)B' bytes='16' count='883' iicount='883' stamp='0.059'/>
+58   71   !   3       jdk.internal.misc.ScopedMemoryAccess::getByteInternal (34 bytes)
+                              @ 5  jdk/internal/foreign/MemorySessionImpl::checkValidStateRaw (not loaded)   failed to inline: not inlineable
+                              @ 13   jdk.internal.misc.Unsafe::getByte (0 bytes)   intrinsic
+                              @ 28   java.lang.ref.Reference::reachabilityFence (1 bytes)   force inline by annotation
+                              @ 19   java.lang.ref.Reference::reachabilityFence (1 bytes)   force inline by annotation
+<nmethod compile_id='71' compiler='c1' level='3' entry='0x000076b6f4c13540' size='1288' address='0x000076b6f4c13390' relocation_offset='336' insts_offset='432' stub_offset='968' scopes_data_offset='1048' scopes_pcs_offset='1160' dependencies_offset='1256' handler_table_offset='1264' metadata_offset='1032' method='jdk.internal.misc.ScopedMemoryAccess getByteInternal (Ljdk/internal/foreign/MemorySessionImpl;Ljava/lang/Object;J)B' bytes='34' count='883' iicount='883' stamp='0.059'/>
+59   75       1       java.nio.Buffer::limit (5 bytes)
+<nmethod compile_id='75' compiler='c1' level='1' entry='0x000076b6fc6d03a0' size='640' address='0x000076b6fc6d0210' relocation_offset='336' insts_offset='400' stub_offset='544' scopes_data_offset='592' scopes_pcs_offset='600' dependencies_offset='632' method='java.nio.Buffer limit ()I' bytes='5' count='158' iicount='158' stamp='0.059'/>
+59   73       3       java.util.concurrent.ConcurrentHashMap$Node::&lt;init&gt; (20 bytes)
+                              @ 1   java.lang.Object::&lt;init&gt; (1 bytes)   inline
+<nmethod compile_id='73' compiler='c1' level='3' entry='0x000076b6f4c13aa0' size='1080' address='0x000076b6f4c13910' relocation_offset='336' insts_offset='400' stub_offset='896' scopes_data_offset='968' scopes_pcs_offset='1008' dependencies_offset='1072' metadata_offset='944' method='java.util.concurrent.ConcurrentHashMap$Node &lt;init&gt; (ILjava/lang/Object;Ljava/lang/Object;)V' bytes='20' count='448' iicount='448' stamp='0.059'/>
+<tty_done stamp='0.061'/>
+</tty>
+<compilation_log thread='14589'>
+<start_compile_thread name='C1 CompilerThread0' thread='14589' process='14574' stamp='0.018'/>
+<task compile_id='1' method='java.lang.Object &lt;init&gt; ()V' bytes='1' count='392' iicount='392' level='3' stamp='0.019'>
+<type id='1223' name='void'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<method id='1398' holder='1228' name='&lt;init&gt;' return='1223' flags='1' bytes='1' iicount='397'/>
+<parse method='1398'  stamp='0.019'>
+<bc code='177' bci='0'/>
+<dependency type='no_finalizable_subclasses' ctxk='1228'/>
+<parse_done stamp='0.019'/>
+</parse>
+<dependency type='no_finalizable_subclasses' ctxk='1228'/>
+<code_cache total_blobs='273' nmethods='1' adapters='196' free_code_cache='250434688'/>
+<task_done success='1' nmsize='256' count='401' stamp='0.020'/>
+</task>
+<task compile_id='2' method='java.lang.String coder ()B' bytes='15' count='257' iicount='257' level='3' stamp='0.021'>
+<type id='1219' name='byte'/>
+<klass id='1229' name='java.lang.String' flags='17'/>
+<method id='1398' holder='1229' name='coder' return='1219' flags='0' bytes='15' iicount='263'/>
+<parse method='1398'  stamp='0.021'>
+<parse_done stamp='0.021'/>
+</parse>
+<code_cache total_blobs='295' nmethods='2' adapters='204' free_code_cache='250411392'/>
+<task_done success='1' nmsize='304' count='263' stamp='0.021'/>
+</task>
+<task compile_id='3' method='java.lang.String length ()I' bytes='11' count='256' iicount='256' level='3' stamp='0.022'>
+<type id='1221' name='int'/>
+<klass id='1229' name='java.lang.String' flags='17'/>
+<method id='1398' holder='1229' name='length' return='1221' flags='1' bytes='11' iicount='261'/>
+<parse method='1398'  stamp='0.023'>
+<bc code='182' bci='6'/>
+<type id='1219' name='byte'/>
+<method id='1400' holder='1229' name='coder' return='1219' flags='0' bytes='15' compile_id='2' compiler='c1' level='3' iicount='449'/>
+<call method='1400' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1400'>
+<parse_done stamp='0.023'/>
+</parse>
+<parse_done stamp='0.023'/>
+</parse>
+<code_cache total_blobs='304' nmethods='3' adapters='208' free_code_cache='250401664'/>
+<task_done success='1' nmsize='408' count='261' inlined_bytes='15' stamp='0.023'/>
+</task>
+<task compile_id='4' method='java.lang.String hashCode ()I' bytes='60' count='287' iicount='287' level='3' stamp='0.023'>
+<type id='1221' name='int'/>
+<klass id='1229' name='java.lang.String' flags='17'/>
+<method id='1398' holder='1229' name='hashCode' return='1221' flags='1' bytes='60' iicount='321'/>
+<parse method='1398'  stamp='0.023'>
+<bc code='182' bci='17'/>
+<type id='1215' name='boolean'/>
+<method id='1400' holder='1229' name='isLatin1' return='1215' flags='0' bytes='19' iicount='230'/>
+<call method='1400' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1400'>
+<parse_done stamp='0.023'/>
+</parse>
+<bc code='184' bci='27'/>
+<klass id='1390' name='[B' flags='1041'/>
+<klass id='1403' name='java.lang.StringLatin1' flags='16'/>
+<method id='1404' holder='1403' name='hashCode' return='1221' arguments='1390' flags='9' bytes='52' iicount='30'/>
+<call method='1404' instr='invokestatic'/>
+<inline_fail reason='callee is too large'/>
+<bc code='184' bci='37'/>
+<klass id='1406' name='java.lang.StringUTF16' unloaded='1'/>
+<method id='1407' holder='1406' name='hashCode' return='1221' arguments='1390' unloaded='1'/>
+<call method='1407' instr='invokestatic'/>
+<inline_fail reason='not inlineable'/>
+<parse_done stamp='0.023'/>
+</parse>
+<code_cache total_blobs='305' nmethods='4' adapters='208' free_code_cache='250400128'/>
+<task_done success='1' nmsize='808' count='326' inlined_bytes='19' stamp='0.024'/>
+</task>
+<task compile_id='10' method='java.util.concurrent.ConcurrentHashMap tabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;I)Ljava/util/concurrent/ConcurrentHashMap$Node;' bytes='22' count='256' iicount='256' level='3' stamp='0.028'>
+<klass id='1398' name='java.util.concurrent.ConcurrentHashMap$Node' flags='8'/>
+<klass id='1399' name='[Ljava.util.concurrent.ConcurrentHashMap$Node;' flags='1040'/>
+<type id='1221' name='int'/>
+<klass id='1328' name='java.util.concurrent.ConcurrentHashMap' flags='1'/>
+<method id='1400' holder='1328' name='tabAt' return='1398' arguments='1399 1221' flags='24' bytes='22' iicount='258'/>
+<parse method='1400'  stamp='0.028'>
+<bc code='182' bci='15'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<type id='1222' name='long'/>
+<klass id='1314' name='jdk.internal.misc.Unsafe' flags='17'/>
+<method id='1404' holder='1314' name='getReferenceAcquire' return='1228' arguments='1228 1222' flags='17' bytes='7' iicount='259'/>
+<call method='1404' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1404'>
+<bc code='182' bci='3'/>
+<method id='1406' holder='1314' name='getReferenceVolatile' return='1228' arguments='1228 1222' flags='257' bytes='0' iicount='259'/>
+<call method='1406' instr='invokevirtual'/>
+<inline_success reason='intrinsic'/>
+<parse_done stamp='0.029'/>
+</parse>
+<parse_done stamp='0.029'/>
+</parse>
+<code_cache total_blobs='352' nmethods='11' adapters='248' free_code_cache='250336640'/>
+<task_done success='1' nmsize='712' count='259' inlined_bytes='7' stamp='0.029'/>
+</task>
+<task compile_id='11' method='jdk.internal.misc.Unsafe getReferenceAcquire (Ljava/lang/Object;J)Ljava/lang/Object;' bytes='7' count='259' iicount='259' level='3' stamp='0.029'>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<type id='1222' name='long'/>
+<klass id='1314' name='jdk.internal.misc.Unsafe' flags='17'/>
+<method id='1398' holder='1314' name='getReferenceAcquire' return='1228' arguments='1228 1222' flags='17' bytes='7' iicount='259'/>
+<parse method='1398'  stamp='0.029'>
+<bc code='182' bci='3'/>
+<method id='1400' holder='1314' name='getReferenceVolatile' return='1228' arguments='1228 1222' flags='257' bytes='0' iicount='259'/>
+<call method='1400' instr='invokevirtual'/>
+<inline_success reason='intrinsic'/>
+<parse_done stamp='0.029'/>
+</parse>
+<code_cache total_blobs='355' nmethods='12' adapters='250' free_code_cache='250332800'/>
+<task_done success='1' nmsize='352' count='259' stamp='0.029'/>
+</task>
+<task compile_id='12' method='java.util.concurrent.ConcurrentHashMap spread (I)I' bytes='10' count='258' iicount='258' level='3' stamp='0.029'>
+<type id='1221' name='int'/>
+<klass id='1328' name='java.util.concurrent.ConcurrentHashMap' flags='1'/>
+<method id='1398' holder='1328' name='spread' return='1221' arguments='1221' flags='24' bytes='10' iicount='258'/>
+<parse method='1398'  stamp='0.029'>
+<parse_done stamp='0.029'/>
+</parse>
+<code_cache total_blobs='358' nmethods='13' adapters='252' free_code_cache='250329216'/>
+<task_done success='1' nmsize='240' count='258' stamp='0.029'/>
+</task>
+<task compile_id='16' method='java.lang.String isLatin1 ()Z' bytes='19' count='374' iicount='374' level='3' stamp='0.029'>
+<type id='1215' name='boolean'/>
+<klass id='1229' name='java.lang.String' flags='17'/>
+<method id='1398' holder='1229' name='isLatin1' return='1215' flags='0' bytes='19' iicount='384'/>
+<parse method='1398'  stamp='0.029'>
+<parse_done stamp='0.030'/>
+</parse>
+<code_cache total_blobs='369' nmethods='14' adapters='262' free_code_cache='250313472'/>
+<task_done success='1' nmsize='360' count='447' stamp='0.030'/>
+</task>
+<task compile_id='14' method='jdk.internal.util.Preconditions checkIndex (IILjava/util/function/BiFunction;)I' bytes='18' count='385' iicount='385' level='3' stamp='0.030'>
+<type id='1221' name='int'/>
+<klass id='1399' name='java.util.function.BiFunction' flags='1537'/>
+<klass id='1398' name='jdk.internal.util.Preconditions' flags='1'/>
+<method id='1400' holder='1398' name='checkIndex' return='1221' arguments='1221 1221 1399' flags='9' bytes='18' iicount='404'/>
+<parse method='1400'  stamp='0.030'>
+<bc code='184' bci='12'/>
+<klass id='1238' name='java.lang.RuntimeException' flags='1'/>
+<method id='1402' holder='1398' name='outOfBoundsCheckIndex' return='1238' arguments='1399 1221 1221' flags='10' bytes='25' iicount='1'/>
+<call method='1402' instr='invokestatic'/>
+<inline_fail reason='callee uses too much stack'/>
+<parse_done stamp='0.030'/>
+</parse>
+<code_cache total_blobs='370' nmethods='15' adapters='262' free_code_cache='250312448'/>
+<task_done success='1' nmsize='400' count='434' stamp='0.030'/>
+</task>
+<task compile_id='15' method='java.lang.String charAt (I)C' bytes='25' count='447' iicount='447' level='3' stamp='0.030'>
+<type id='1216' name='char'/>
+<type id='1221' name='int'/>
+<klass id='1229' name='java.lang.String' flags='17'/>
+<method id='1398' holder='1229' name='charAt' return='1216' arguments='1221' flags='1' bytes='25' iicount='447'/>
+<parse method='1398'  stamp='0.030'>
+<bc code='182' bci='1'/>
+<type id='1215' name='boolean'/>
+<method id='1400' holder='1229' name='isLatin1' return='1215' flags='0' bytes='19' compile_id='16' compiler='c1' level='3' iicount='568'/>
+<call method='1400' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1400'>
+<parse_done stamp='0.030'/>
+</parse>
+<bc code='184' bci='12'/>
+<klass id='1390' name='[B' flags='1041'/>
+<klass id='1403' name='java.lang.StringLatin1' flags='16'/>
+<method id='1404' holder='1403' name='charAt' return='1216' arguments='1390 1221' flags='9' bytes='15' iicount='472'/>
+<call method='1404' instr='invokestatic'/>
+<inline_success reason='inline'/>
+<parse method='1404'>
+<bc code='184' bci='3'/>
+<type id='1223' name='void'/>
+<method id='1406' holder='1229' name='checkIndex' return='1223' arguments='1221 1221' flags='8' bytes='10' iicount='501'/>
+<call method='1406' instr='invokestatic'/>
+<inline_success reason='inline'/>
+<parse method='1406'>
+<bc code='184' bci='5'/>
+<klass id='1408' name='java.util.function.BiFunction' flags='1537'/>
+<klass id='1409' name='jdk.internal.util.Preconditions' flags='1'/>
+<method id='1413' holder='1409' name='checkIndex' return='1221' arguments='1221 1221 1408' flags='9' bytes='18' compile_id='14' compiler='c1' level='3' iicount='535'/>
+<call method='1413' instr='invokestatic'/>
+<inline_success reason='intrinsic'/>
+<parse_done stamp='0.030'/>
+</parse>
+<parse_done stamp='0.030'/>
+</parse>
+<bc code='184' bci='21'/>
+<klass id='1415' name='java.lang.StringUTF16' unloaded='1'/>
+<method id='1416' holder='1415' name='charAt' return='1216' arguments='1390 1221' unloaded='1'/>
+<call method='1416' instr='invokestatic'/>
+<inline_fail reason='not inlineable'/>
+<parse_done stamp='0.030'/>
+</parse>
+<code_cache total_blobs='372' nmethods='16' adapters='263' free_code_cache='250309120'/>
+<task_done success='1' nmsize='896' count='590' inlined_bytes='44' stamp='0.030'/>
+</task>
+<task compile_id='17' method='java.lang.StringLatin1 charAt ([BI)C' bytes='15' count='603' iicount='603' level='3' stamp='0.030'>
+<type id='1216' name='char'/>
+<klass id='1390' name='[B' flags='1041'/>
+<type id='1221' name='int'/>
+<klass id='1398' name='java.lang.StringLatin1' flags='16'/>
+<method id='1399' holder='1398' name='charAt' return='1216' arguments='1390 1221' flags='9' bytes='15' iicount='604'/>
+<parse method='1399'  stamp='0.030'>
+<bc code='184' bci='3'/>
+<type id='1223' name='void'/>
+<klass id='1229' name='java.lang.String' flags='17'/>
+<method id='1401' holder='1229' name='checkIndex' return='1223' arguments='1221 1221' flags='8' bytes='10' iicount='625'/>
+<call method='1401' instr='invokestatic'/>
+<inline_success reason='inline'/>
+<parse method='1401'>
+<bc code='184' bci='5'/>
+<klass id='1403' name='java.util.function.BiFunction' flags='1537'/>
+<klass id='1404' name='jdk.internal.util.Preconditions' flags='1'/>
+<method id='1408' holder='1404' name='checkIndex' return='1221' arguments='1221 1221 1403' flags='9' bytes='18' compile_id='14' compiler='c1' level='3' iicount='593'/>
+<call method='1408' instr='invokestatic'/>
+<inline_success reason='intrinsic'/>
+<parse_done stamp='0.030'/>
+</parse>
+<parse_done stamp='0.030'/>
+</parse>
+<code_cache total_blobs='375' nmethods='17' adapters='265' free_code_cache='250305024'/>
+<task_done success='1' nmsize='448' count='723' inlined_bytes='10' stamp='0.030'/>
+</task>
+<task compile_id='18' method='java.lang.String checkIndex (II)V' bytes='10' count='723' iicount='723' level='3' stamp='0.030'>
+<type id='1223' name='void'/>
+<type id='1221' name='int'/>
+<klass id='1229' name='java.lang.String' flags='17'/>
+<method id='1398' holder='1229' name='checkIndex' return='1223' arguments='1221 1221' flags='8' bytes='10' iicount='723'/>
+<parse method='1398'  stamp='0.030'>
+<bc code='184' bci='5'/>
+<klass id='1400' name='java.util.function.BiFunction' flags='1537'/>
+<klass id='1401' name='jdk.internal.util.Preconditions' flags='1'/>
+<method id='1405' holder='1401' name='checkIndex' return='1221' arguments='1221 1221 1400' flags='9' bytes='18' compile_id='14' compiler='c1' level='3' iicount='593'/>
+<call method='1405' instr='invokestatic'/>
+<inline_success reason='intrinsic'/>
+<parse_done stamp='0.030'/>
+</parse>
+<code_cache total_blobs='377' nmethods='18' adapters='266' free_code_cache='250302592'/>
+<task_done success='1' nmsize='304' count='762' stamp='0.030'/>
+</task>
+<task compile_id='19' method='jdk.internal.util.StrongReferenceKey get ()Ljava/lang/Object;' bytes='5' count='131' iicount='131' level='1' stamp='0.030'>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<klass id='1398' name='jdk.internal.util.StrongReferenceKey' flags='16'/>
+<method id='1399' holder='1398' name='get' return='1228' flags='1' bytes='5' iicount='131'/>
+<parse method='1399'  stamp='0.030'>
+<parse_done stamp='0.030'/>
+</parse>
+<code_cache total_blobs='378' nmethods='19' adapters='266' free_code_cache='250301824'/>
+<task_done success='1' nmsize='192' count='131' stamp='0.030'/>
+</task>
+<task compile_id='20' method='java.lang.Enum ordinal ()I' bytes='5' count='129' iicount='129' level='1' stamp='0.031'>
+<type id='1221' name='int'/>
+<klass id='1320' name='java.lang.Enum' flags='1025'/>
+<method id='1398' holder='1320' name='ordinal' return='1221' flags='17' bytes='5' iicount='129'/>
+<parse method='1398'  stamp='0.031'>
+<parse_done stamp='0.031'/>
+</parse>
+<code_cache total_blobs='380' nmethods='21' adapters='266' free_code_cache='250300288'/>
+<task_done success='1' nmsize='192' count='129' stamp='0.031'/>
+</task>
+<task compile_id='26' method='java.util.Objects requireNonNull (Ljava/lang/Object;)Ljava/lang/Object;' bytes='14' count='390' iicount='390' level='3' stamp='0.033'>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<klass id='1398' name='java.util.Objects' flags='17'/>
+<method id='1399' holder='1398' name='requireNonNull' return='1228' arguments='1228' flags='9' bytes='14' iicount='392'/>
+<parse method='1399'  stamp='0.033'>
+<bc code='183' bci='8'/>
+<type id='1223' name='void'/>
+<klass id='1394' name='java.lang.NullPointerException' flags='1'/>
+<method id='1401' holder='1394' name='&lt;init&gt;' return='1223' flags='1' bytes='5' iicount='1'/>
+<call method='1401' instr='invokespecial'/>
+<inline_fail reason='don&apos;t inline Throwable constructors'/>
+<parse_done stamp='0.033'/>
+</parse>
+<code_cache total_blobs='387' nmethods='28' adapters='266' free_code_cache='250294400'/>
+<task_done success='1' nmsize='488' count='425' stamp='0.033'/>
+</task>
+<task compile_id='27' method='java.lang.invoke.MethodType returnType ()Ljava/lang/Class;' bytes='5' count='129' iicount='129' level='1' stamp='0.033'>
+<klass id='1230' name='java.lang.Class' flags='17'/>
+<klass id='1298' name='java.lang.invoke.MethodType' flags='17'/>
+<method id='1398' holder='1298' name='returnType' return='1230' flags='1' bytes='5' iicount='130'/>
+<parse method='1398'  stamp='0.033'>
+<parse_done stamp='0.033'/>
+</parse>
+<code_cache total_blobs='389' nmethods='30' adapters='266' free_code_cache='250292608'/>
+<task_done success='1' nmsize='192' count='131' stamp='0.033'/>
+</task>
+<task compile_id='31' method='java.lang.ref.ReferenceQueue headIsNull ()Z' bytes='13' count='257' iicount='257' level='3' stamp='0.033'>
+<type id='1215' name='boolean'/>
+<klass id='1398' name='java.lang.ref.ReferenceQueue' flags='1'/>
+<method id='1399' holder='1398' name='headIsNull' return='1215' flags='16' bytes='13' iicount='257'/>
+<parse method='1399'  stamp='0.034'>
+<parse_done stamp='0.034'/>
+</parse>
+<code_cache total_blobs='391' nmethods='31' adapters='267' free_code_cache='250290176'/>
+<task_done success='1' nmsize='344' count='257' stamp='0.034'/>
+</task>
+<task compile_id='32' method='jdk.internal.util.ReferencedKeyMap removeStaleReferences ()V' bytes='30' count='258' iicount='258' level='3' stamp='0.034'>
+<type id='1223' name='void'/>
+<klass id='1398' name='jdk.internal.util.ReferencedKeyMap' flags='17'/>
+<method id='1399' holder='1398' name='removeStaleReferences' return='1223' flags='1' bytes='30' iicount='268'/>
+<parse method='1399'  stamp='0.034'>
+<bc code='182' bci='4'/>
+<klass id='1256' name='java.lang.ref.Reference' flags='1025'/>
+<klass id='1401' name='java.lang.ref.ReferenceQueue' flags='1'/>
+<method id='1402' holder='1401' name='poll' return='1256' flags='1' bytes='40' iicount='9'/>
+<call method='1402' instr='invokevirtual'/>
+<inline_fail reason='no static binding'/>
+<bc code='185' bci='20'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<klass id='1366' name='java.util.Map' flags='1537'/>
+<method id='1403' holder='1366' name='remove' return='1228' arguments='1228' flags='1025' bytes='0' iicount='1'/>
+<call method='1403' instr='invokeinterface'/>
+<inline_fail reason='no static binding'/>
+<parse_done stamp='0.034'/>
+</parse>
+<code_cache total_blobs='393' nmethods='33' adapters='267' free_code_cache='250287744'/>
+<task_done success='1' nmsize='856' count='273' stamp='0.035'/>
+</task>
+<task compile_id='33' method='java.lang.ref.NativeReferenceQueue poll ()Ljava/lang/ref/Reference;' bytes='28' count='273' iicount='273' level='3' stamp='0.035'>
+<klass id='1256' name='java.lang.ref.Reference' flags='1025'/>
+<klass id='1398' name='java.lang.ref.NativeReferenceQueue' flags='16'/>
+<method id='1399' holder='1398' name='poll' return='1256' flags='1' bytes='28' iicount='273'/>
+<parse method='1399'  stamp='0.035'>
+<bc code='182' bci='1'/>
+<type id='1215' name='boolean'/>
+<klass id='1401' name='java.lang.ref.ReferenceQueue' flags='1'/>
+<method id='1402' holder='1401' name='headIsNull' return='1215' flags='16' bytes='13' compile_id='31' compiler='c1' level='3' iicount='282'/>
+<call method='1402' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1402'>
+<parse_done stamp='0.035'/>
+</parse>
+<bc code='182' bci='17'/>
+<method id='1405' holder='1401' name='poll0' return='1256' flags='16' bytes='65' iicount='2'/>
+<call method='1405' instr='invokevirtual'/>
+<inline_fail reason='callee is too large'/>
+<parse_done stamp='0.035'/>
+</parse>
+<code_cache total_blobs='394' nmethods='34' adapters='267' free_code_cache='250286080'/>
+<task_done success='1' nmsize='840' count='273' inlined_bytes='13' stamp='0.035'/>
+</task>
+<task compile_id='36' method='java.util.concurrent.ConcurrentHashMap get (Ljava/lang/Object;)Ljava/lang/Object;' bytes='162' count='256' backedge_count='1' iicount='256' level='3' stamp='0.036'>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<klass id='1328' name='java.util.concurrent.ConcurrentHashMap' flags='1'/>
+<method id='1398' holder='1328' name='get' return='1228' arguments='1228' flags='1' bytes='162' iicount='256'/>
+<parse method='1398'  stamp='0.036'>
+<bc code='182' bci='1'/>
+<type id='1221' name='int'/>
+<method id='1400' holder='1228' name='hashCode' return='1221' flags='257' bytes='0' compile_id='6' compile_kind='c2n' compiler='' level='0' iicount='256'/>
+<call method='1400' instr='invokevirtual'/>
+<inline_fail reason='no static binding'/>
+<bc code='184' bci='4'/>
+<method id='1401' holder='1328' name='spread' return='1221' arguments='1221' flags='24' bytes='10' compile_id='12' compiler='c1' level='3' iicount='395'/>
+<call method='1401' instr='invokestatic'/>
+<inline_success reason='inline'/>
+<parse method='1401'>
+<parse_done stamp='0.037'/>
+</parse>
+<bc code='184' bci='34'/>
+<klass id='1403' name='java.util.concurrent.ConcurrentHashMap$Node' flags='8'/>
+<klass id='1404' name='[Ljava.util.concurrent.ConcurrentHashMap$Node;' flags='1040'/>
+<method id='1405' holder='1328' name='tabAt' return='1403' arguments='1404 1221' flags='24' bytes='22' compile_id='10' compiler='c1' level='3' iicount='398'/>
+<call method='1405' instr='invokestatic'/>
+<inline_fail reason='callee uses too much stack'/>
+<bc code='182' bci='73'/>
+<type id='1215' name='boolean'/>
+<method id='1407' holder='1228' name='equals' return='1215' arguments='1228' flags='1' bytes='11' iicount='18'/>
+<call method='1407' instr='invokevirtual'/>
+<inline_fail reason='no static binding'/>
+<bc code='182' bci='93'/>
+<method id='1408' holder='1403' name='find' return='1403' arguments='1221 1228' flags='0' bytes='52' iicount='1'/>
+<call method='1408' instr='invokevirtual'/>
+<inline_fail reason='no static binding'/>
+<bc code='182' bci='149'/>
+<call method='1407' instr='invokevirtual'/>
+<inline_fail reason='no static binding'/>
+<parse_done stamp='0.037'/>
+</parse>
+<code_cache total_blobs='398' nmethods='38' adapters='267' free_code_cache='250279808'/>
+<task_done success='1' nmsize='2624' count='263' backedge_count='1' inlined_bytes='10' stamp='0.037'/>
+</task>
+<task compile_id='35' method='java.lang.invoke.MethodTypeForm canonicalize (Ljava/lang/Class;I)Ljava/lang/Class;' bytes='74' count='268' iicount='268' level='3' stamp='0.037'>
+<klass id='1230' name='java.lang.Class' flags='17'/>
+<type id='1221' name='int'/>
+<klass id='1398' name='java.lang.invoke.MethodTypeForm' flags='16'/>
+<method id='1399' holder='1398' name='canonicalize' return='1230' arguments='1230 1221' flags='8' bytes='74' iicount='268'/>
+<parse method='1399'  stamp='0.037'>
+<bc code='182' bci='10'/>
+<type id='1215' name='boolean'/>
+<method id='1402' holder='1230' name='isPrimitive' return='1215' flags='257' bytes='0' compile_id='25' compile_kind='c2n' compiler='' level='0' iicount='256'/>
+<call method='1402' instr='invokevirtual'/>
+<inline_success reason='intrinsic'/>
+<bc code='184' bci='45'/>
+<klass id='1404' name='sun.invoke.util.Wrapper' flags='16401'/>
+<method id='1405' holder='1404' name='asPrimitiveType' return='1230' arguments='1230' flags='9' bytes='20' iicount='1'/>
+<call method='1405' instr='invokestatic'/>
+<inline_success reason='inline'/>
+<parse method='1405'>
+<bc code='184' bci='1'/>
+<method id='1407' holder='1404' name='findWrapperType' return='1404' arguments='1230' flags='8' bytes='102' iicount='1'/>
+<call method='1407' instr='invokestatic'/>
+<inline_fail reason='callee is too large'/>
+<bc code='182' bci='10'/>
+<method id='1409' holder='1404' name='primitiveType' return='1230' flags='1' bytes='5' iicount='1'/>
+<call method='1409' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1409'>
+<parse_done stamp='0.038'/>
+</parse>
+<bc code='184' bci='14'/>
+<method id='1411' holder='1404' name='forceType' return='1230' arguments='1230 1230' flags='8' bytes='72' iicount='1'/>
+<call method='1411' instr='invokestatic'/>
+<inline_fail reason='callee is too large'/>
+<parse_done stamp='0.038'/>
+</parse>
+<bc code='184' bci='68'/>
+<method id='1413' holder='1404' name='asWrapperType' return='1230' arguments='1230' flags='9' bytes='18' iicount='1'/>
+<call method='1413' instr='invokestatic'/>
+<inline_success reason='inline'/>
+<parse method='1413'>
+<bc code='182' bci='1'/>
+<call method='1402' instr='invokevirtual'/>
+<inline_success reason='intrinsic'/>
+<bc code='184' bci='8'/>
+<method id='1415' holder='1404' name='forPrimitiveType' return='1404' arguments='1230' flags='9' bytes='122' iicount='17'/>
+<call method='1415' instr='invokestatic'/>
+<inline_fail reason='callee is too large'/>
+<bc code='182' bci='12'/>
+<method id='1417' holder='1404' name='wrapperType' return='1230' arguments='1230' flags='1' bytes='52' iicount='1'/>
+<call method='1417' instr='invokevirtual'/>
+<inline_fail reason='callee is too large'/>
+<parse_done stamp='0.038'/>
+</parse>
+<parse_done stamp='0.038'/>
+</parse>
+<code_cache total_blobs='399' nmethods='39' adapters='267' free_code_cache='250277376'/>
+<task_done success='1' nmsize='1424' count='268' inlined_bytes='43' stamp='0.038'/>
+</task>
+<task compile_id='40' method='java.lang.invoke.MethodType hashCode ()I' bytes='53' count='256' backedge_count='722' iicount='256' level='3' stamp='0.039'>
+<type id='1221' name='int'/>
+<klass id='1298' name='java.lang.invoke.MethodType' flags='17'/>
+<method id='1398' holder='1298' name='hashCode' return='1221' flags='1' bytes='53' iicount='256'/>
+<parse method='1398'  stamp='0.039'>
+<bc code='182' bci='6'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<method id='1400' holder='1228' name='hashCode' return='1221' flags='257' bytes='0' compile_id='6' compile_kind='c2n' compiler='' level='0' iicount='256'/>
+<call method='1400' instr='invokevirtual'/>
+<inline_fail reason='native method'/>
+<bc code='182' bci='40'/>
+<call method='1400' instr='invokevirtual'/>
+<inline_fail reason='native method'/>
+<parse_done stamp='0.039'/>
+</parse>
+<code_cache total_blobs='402' nmethods='41' adapters='267' free_code_cache='250272128'/>
+<task_done success='1' nmsize='880' count='270' backedge_count='734' stamp='0.039'/>
+</task>
+<task compile_id='42' method='java.lang.Math min (II)I' bytes='11' count='268' iicount='268' level='3' stamp='0.039'>
+<type id='1221' name='int'/>
+<klass id='1398' name='java.lang.Math' flags='17'/>
+<method id='1399' holder='1398' name='min' return='1221' arguments='1221 1221' flags='9' bytes='11' iicount='268'/>
+<parse method='1399'  stamp='0.039'>
+<parse_done stamp='0.039'/>
+</parse>
+<code_cache total_blobs='403' nmethods='42' adapters='267' free_code_cache='250271232'/>
+<task_done success='1' nmsize='304' count='271' stamp='0.039'/>
+</task>
+<task compile_id='44' method='java.lang.invoke.MethodType checkSlotCount (I)V' bytes='33' count='256' iicount='256' level='3' stamp='0.039'>
+<type id='1223' name='void'/>
+<type id='1221' name='int'/>
+<klass id='1298' name='java.lang.invoke.MethodType' flags='17'/>
+<method id='1398' holder='1298' name='checkSlotCount' return='1223' arguments='1221' flags='8' bytes='33' iicount='256'/>
+<parse method='1398'  stamp='0.039'>
+<bc code='183' bci='13'/>
+<klass id='1312' name='java.lang.StringBuilder' flags='17'/>
+<method id='1400' holder='1312' name='&lt;init&gt;' return='1223' flags='1' bytes='7' iicount='36'/>
+<call method='1400' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1400'>
+<bc code='183' bci='3'/>
+<klass id='1310' name='java.lang.AbstractStringBuilder' flags='1024'/>
+<method id='1402' holder='1310' name='&lt;init&gt;' return='1223' arguments='1221' flags='0' bytes='39' iicount='53'/>
+<call method='1402' instr='invokespecial'/>
+<inline_fail reason='callee is too large'/>
+<parse_done stamp='0.039'/>
+</parse>
+<bc code='182' bci='18'/>
+<klass id='1229' name='java.lang.String' flags='17'/>
+<method id='1405' holder='1312' name='append' return='1312' arguments='1229' flags='1' bytes='8' iicount='95'/>
+<call method='1405' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1405'>
+<bc code='183' bci='2'/>
+<method id='1407' holder='1310' name='append' return='1310' arguments='1229' flags='1' bytes='45' iicount='95'/>
+<call method='1407' instr='invokespecial'/>
+<inline_fail reason='callee is too large'/>
+<parse_done stamp='0.039'/>
+</parse>
+<bc code='182' bci='22'/>
+<method id='1409' holder='1312' name='append' return='1312' arguments='1221' flags='1' bytes='8' iicount='7'/>
+<call method='1409' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1409'>
+<bc code='183' bci='2'/>
+<method id='1411' holder='1310' name='append' return='1310' arguments='1221' flags='1' bytes='55' iicount='7'/>
+<call method='1411' instr='invokespecial'/>
+<inline_fail reason='callee is too large'/>
+<parse_done stamp='0.039'/>
+</parse>
+<bc code='182' bci='25'/>
+<method id='1413' holder='1312' name='toString' return='1229' flags='1' bytes='20' iicount='54'/>
+<call method='1413' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1413'>
+<bc code='182' bci='1'/>
+<method id='1415' holder='1312' name='length' return='1221' flags='4161' bytes='5' iicount='110'/>
+<call method='1415' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1415'>
+<bc code='183' bci='1'/>
+<method id='1417' holder='1310' name='length' return='1221' flags='1' bytes='5' iicount='112'/>
+<call method='1417' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1417'>
+<parse_done stamp='0.039'/>
+</parse>
+<parse_done stamp='0.039'/>
+</parse>
+<bc code='183' bci='16'/>
+<klass id='1420' name='java.lang.Void' flags='17'/>
+<method id='1421' holder='1229' name='&lt;init&gt;' return='1223' arguments='1310 1420' flags='0' bytes='98' iicount='58'/>
+<call method='1421' instr='invokespecial'/>
+<inline_fail reason='callee is too large'/>
+<parse_done stamp='0.039'/>
+</parse>
+<bc code='184' bci='28'/>
+<klass id='1238' name='java.lang.RuntimeException' flags='1'/>
+<klass id='1423' name='java.lang.invoke.MethodHandleStatics' flags='0'/>
+<method id='1424' holder='1423' name='newIllegalArgumentException' return='1238' arguments='1229' flags='8' bytes='9' iicount='1'/>
+<call method='1424' instr='invokestatic'/>
+<inline_success reason='inline'/>
+<parse method='1424'>
+<bc code='183' bci='5'/>
+<klass id='1426' name='java.lang.IllegalArgumentException' flags='1'/>
+<method id='1427' holder='1426' name='&lt;init&gt;' return='1223' arguments='1229' flags='1' bytes='6' iicount='1'/>
+<call method='1427' instr='invokespecial'/>
+<inline_fail reason='don&apos;t inline Throwable constructors'/>
+<parse_done stamp='0.040'/>
+</parse>
+<parse_done stamp='0.040'/>
+</parse>
+<code_cache total_blobs='404' nmethods='43' adapters='267' free_code_cache='250268416'/>
+<task_done success='1' nmsize='1640' count='270' inlined_bytes='62' stamp='0.040'/>
+</task>
+<task compile_id='41' method='java.lang.invoke.MemberName getDeclaringClass ()Ljava/lang/Class;' bytes='5' count='145' iicount='145' level='1' stamp='0.040'>
+<klass id='1230' name='java.lang.Class' flags='17'/>
+<klass id='1294' name='java.lang.invoke.MemberName' flags='16'/>
+<method id='1398' holder='1294' name='getDeclaringClass' return='1230' flags='1' bytes='5' iicount='145'/>
+<parse method='1398'  stamp='0.040'>
+<parse_done stamp='0.040'/>
+</parse>
+<code_cache total_blobs='405' nmethods='44' adapters='267' free_code_cache='250267648'/>
+<task_done success='1' nmsize='192' count='145' stamp='0.040'/>
+</task>
+<task compile_id='45' method='java.lang.invoke.MemberName isInvocable ()Z' bytes='8' count='260' iicount='260' level='3' stamp='0.040'>
+<type id='1215' name='boolean'/>
+<klass id='1294' name='java.lang.invoke.MemberName' flags='16'/>
+<method id='1398' holder='1294' name='isInvocable' return='1215' flags='1' bytes='8' iicount='260'/>
+<parse method='1398'  stamp='0.040'>
+<bc code='182' bci='4'/>
+<type id='1221' name='int'/>
+<method id='1400' holder='1294' name='anyFlagSet' return='1215' arguments='1221' flags='2' bytes='15' iicount='260'/>
+<call method='1400' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1400'>
+<parse_done stamp='0.040'/>
+</parse>
+<parse_done stamp='0.040'/>
+</parse>
+<code_cache total_blobs='406' nmethods='45' adapters='267' free_code_cache='250266624'/>
+<task_done success='1' nmsize='448' count='260' inlined_bytes='15' stamp='0.040'/>
+</task>
+<task compile_id='46' method='jdk.internal.util.ArraysSupport signedHashCode (I[BII)I' bytes='37' count='131' backedge_count='2900' iicount='131' level='3' stamp='0.042'>
+<type id='1221' name='int'/>
+<klass id='1390' name='[B' flags='1041'/>
+<klass id='1398' name='jdk.internal.util.ArraysSupport' flags='1'/>
+<method id='1399' holder='1398' name='signedHashCode' return='1221' arguments='1221 1390 1221 1221' flags='10' bytes='37' iicount='131'/>
+<parse method='1399'  stamp='0.042'>
+<parse_done stamp='0.042'/>
+</parse>
+<code_cache total_blobs='413' nmethods='47' adapters='272' free_code_cache='250257152'/>
+<task_done success='1' nmsize='448' count='131' backedge_count='2900' stamp='0.042'/>
+</task>
+<task compile_id='47' compile_kind='osr' method='java.util.Properties$LineReader readLine ()I' bytes='584' count='48' backedge_count='62845' iicount='48' osr_bci='224' level='3' stamp='0.043'>
+<type id='1221' name='int'/>
+<klass id='1398' name='java.util.Properties$LineReader' flags='10'/>
+<method id='1399' holder='1398' name='readLine' return='1221' flags='0' bytes='584' iicount='48'/>
+<parse method='1399'  stamp='0.044'>
+<bc code='182' bci='70'/>
+<klass id='1390' name='[B' flags='1041'/>
+<klass id='1316' name='java.io.InputStream' flags='1025'/>
+<method id='1401' holder='1316' name='read' return='1221' arguments='1390' flags='1' bytes='9' iicount='1'/>
+<call method='1401' instr='invokevirtual'/>
+<inline_fail reason='no static binding'/>
+<bc code='182' bci='82'/>
+<klass id='1387' name='[C' flags='1041'/>
+<klass id='1402' name='java.io.Reader' unloaded='1'/>
+<method id='1403' holder='1402' name='read' return='1221' arguments='1387' unloaded='1'/>
+<call method='1403' instr='invokevirtual'/>
+<inline_fail reason='not inlineable'/>
+<bc code='182' bci='274'/>
+<call method='1401' instr='invokevirtual'/>
+<inline_fail reason='no static binding'/>
+<bc code='182' bci='343'/>
+<call method='1403' instr='invokevirtual'/>
+<inline_fail reason='not inlineable'/>
+<bc code='184' bci='401'/>
+<klass id='1404' name='jdk.internal.util.ArraysSupport' flags='1'/>
+<method id='1405' holder='1404' name='newLength' return='1221' arguments='1221 1221 1221' flags='9' bytes='27' iicount='48'/>
+<call method='1405' instr='invokestatic'/>
+<inline_success reason='inline'/>
+<parse method='1405'>
+<bc code='184' bci='3'/>
+<klass id='1407' name='java.lang.Math' flags='17'/>
+<method id='1408' holder='1407' name='max' return='1221' arguments='1221 1221' flags='9' bytes='11' iicount='151'/>
+<call method='1408' instr='invokestatic'/>
+<inline_success reason='inline'/>
+<parse method='1408'>
+<parse_done stamp='0.044'/>
+</parse>
+<bc code='184' bci='23'/>
+<method id='1410' holder='1404' name='hugeLength' return='1221' arguments='1221 1221' flags='10' bytes='60' iicount='1'/>
+<call method='1410' instr='invokestatic'/>
+<inline_fail reason='callee is too large'/>
+<parse_done stamp='0.045'/>
+</parse>
+<bc code='184' bci='417'/>
+<type id='1223' name='void'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<klass id='1234' name='java.lang.System' flags='17'/>
+<method id='1412' holder='1234' name='arraycopy' return='1223' arguments='1228 1221 1228 1221 1221' flags='265' bytes='0' compile_id='30' compile_kind='c2n' compiler='' level='0' iicount='256'/>
+<call method='1412' instr='invokestatic'/>
+<inline_success reason='intrinsic'/>
+<bc code='182' bci='479'/>
+<call method='1401' instr='invokevirtual'/>
+<inline_fail reason='no static binding'/>
+<bc code='182' bci='491'/>
+<call method='1403' instr='invokevirtual'/>
+<inline_fail reason='not inlineable'/>
+<parse_done stamp='0.045'/>
+</parse>
+<code_cache total_blobs='427' nmethods='52' adapters='281' free_code_cache='250226560'/>
+<task_done success='1' nmsize='10568' count='48' backedge_count='62845' inlined_bytes='38' stamp='0.047'/>
+</task>
+<task compile_id='51' method='java.lang.AbstractStringBuilder length ()I' bytes='5' count='176' iicount='176' level='1' stamp='0.047'>
+<type id='1221' name='int'/>
+<klass id='1310' name='java.lang.AbstractStringBuilder' flags='1024'/>
+<method id='1398' holder='1310' name='length' return='1221' flags='1' bytes='5' iicount='176'/>
+<parse method='1398'  stamp='0.047'>
+<parse_done stamp='0.047'/>
+</parse>
+<code_cache total_blobs='428' nmethods='53' adapters='281' free_code_cache='250225792'/>
+<task_done success='1' nmsize='192' count='176' stamp='0.047'/>
+</task>
+<task compile_id='49' method='java.util.concurrent.ConcurrentHashMap casTabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;ILjava/util/concurrent/ConcurrentHashMap$Node;Ljava/util/concurrent/ConcurrentHashMap$Node;)Z' bytes='21' count='369' iicount='369' level='3' stamp='0.047'>
+<type id='1215' name='boolean'/>
+<klass id='1399' name='[Ljava.util.concurrent.ConcurrentHashMap$Node;' flags='1040'/>
+<type id='1221' name='int'/>
+<klass id='1398' name='java.util.concurrent.ConcurrentHashMap$Node' flags='8'/>
+<klass id='1328' name='java.util.concurrent.ConcurrentHashMap' flags='1'/>
+<method id='1400' holder='1328' name='casTabAt' return='1215' arguments='1399 1221 1398 1398' flags='24' bytes='21' iicount='369'/>
+<parse method='1400'  stamp='0.047'>
+<bc code='182' bci='17'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<type id='1222' name='long'/>
+<klass id='1314' name='jdk.internal.misc.Unsafe' flags='17'/>
+<method id='1404' holder='1314' name='compareAndSetReference' return='1215' arguments='1228 1222 1228 1228' flags='273' bytes='0' compile_id='48' compile_kind='c2n' compiler='' level='0' iicount='256'/>
+<call method='1404' instr='invokevirtual'/>
+<inline_success reason='intrinsic'/>
+<parse_done stamp='0.048'/>
+</parse>
+<code_cache total_blobs='429' nmethods='54' adapters='281' free_code_cache='250224896'/>
+<task_done success='1' nmsize='352' count='369' stamp='0.048'/>
+</task>
+<task compile_id='52' method='java.lang.invoke.MethodType form ()Ljava/lang/invoke/MethodTypeForm;' bytes='5' count='149' iicount='149' level='1' stamp='0.048'>
+<klass id='1398' name='java.lang.invoke.MethodTypeForm' flags='16'/>
+<klass id='1298' name='java.lang.invoke.MethodType' flags='17'/>
+<method id='1399' holder='1298' name='form' return='1398' flags='0' bytes='5' iicount='149'/>
+<parse method='1399'  stamp='0.048'>
+<parse_done stamp='0.048'/>
+</parse>
+<code_cache total_blobs='430' nmethods='55' adapters='281' free_code_cache='250224128'/>
+<task_done success='1' nmsize='192' count='149' stamp='0.048'/>
+</task>
+<task compile_id='56' method='java.util.concurrent.ConcurrentHashMap addCount (JI)V' bytes='280' count='258' backedge_count='2' iicount='258' level='3' stamp='0.048'>
+<type id='1223' name='void'/>
+<type id='1222' name='long'/>
+<type id='1221' name='int'/>
+<klass id='1328' name='java.util.concurrent.ConcurrentHashMap' flags='1'/>
+<method id='1398' holder='1328' name='addCount' return='1223' arguments='1222 1221' flags='18' bytes='280' iicount='258'/>
+<parse method='1398'  stamp='0.048'>
+<bc code='182' bci='31'/>
+<type id='1215' name='boolean'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<klass id='1314' name='jdk.internal.misc.Unsafe' flags='17'/>
+<method id='1404' holder='1314' name='compareAndSetLong' return='1215' arguments='1228 1222 1222 1222' flags='273' bytes='0' iicount='269'/>
+<call method='1404' instr='invokevirtual'/>
+<inline_success reason='intrinsic'/>
+<bc code='184' bci='58'/>
+<klass id='1405' name='java.util.concurrent.ThreadLocalRandom' unloaded='1'/>
+<method id='1406' holder='1405' name='getProbe' return='1221' unloaded='1'/>
+<call method='1406' instr='invokestatic'/>
+<inline_fail reason='not inlineable'/>
+<bc code='182' bci='91'/>
+<call method='1404' instr='invokevirtual'/>
+<inline_success reason='intrinsic'/>
+<bc code='182' bci='115'/>
+<method id='1407' holder='1328' name='sumCount' return='1222' flags='16' bytes='60' iicount='5'/>
+<call method='1407' instr='invokevirtual'/>
+<inline_fail reason='callee is too large'/>
+<bc code='184' bci='161'/>
+<method id='1411' holder='1328' name='resizeStamp' return='1221' arguments='1221' flags='24' bytes='9' iicount='6'/>
+<call method='1411' instr='invokestatic'/>
+<inline_success reason='inline'/>
+<parse method='1411'>
+<bc code='184' bci='1'/>
+<klass id='1347' name='java.lang.Integer' flags='17'/>
+<method id='1413' holder='1347' name='numberOfLeadingZeros' return='1221' arguments='1221' flags='9' bytes='79' iicount='20'/>
+<call method='1413' instr='invokestatic'/>
+<inline_fail reason='callee is too large'/>
+<parse_done stamp='0.048'/>
+</parse>
+<bc code='182' bci='227'/>
+<method id='1415' holder='1314' name='compareAndSetInt' return='1215' arguments='1228 1222 1221 1221' flags='273' bytes='0' iicount='43'/>
+<call method='1415' instr='invokevirtual'/>
+<inline_success reason='intrinsic'/>
+<bc code='182' bci='238'/>
+<klass id='1410' name='[Ljava.util.concurrent.ConcurrentHashMap$Node;' flags='1040'/>
+<method id='1416' holder='1328' name='transfer' return='1223' arguments='1410 1410' flags='18' bytes='849' iicount='3'/>
+<call method='1416' instr='invokevirtual'/>
+<inline_fail reason='callee is too large'/>
+<bc code='182' bci='257'/>
+<call method='1415' instr='invokevirtual'/>
+<inline_success reason='intrinsic'/>
+<bc code='182' bci='267'/>
+<call method='1416' instr='invokevirtual'/>
+<inline_fail reason='callee is too large'/>
+<bc code='182' bci='271'/>
+<call method='1407' instr='invokevirtual'/>
+<inline_fail reason='callee is too large'/>
+<bc code='182' bci='104'/>
+<method id='1418' holder='1328' name='fullAddCount' return='1223' arguments='1222 1215' flags='18' bytes='462' iicount='1'/>
+<call method='1418' instr='invokevirtual'/>
+<inline_fail reason='callee is too large'/>
+<parse_done stamp='0.049'/>
+</parse>
+<code_cache total_blobs='440' nmethods='56' adapters='290' free_code_cache='250207104'/>
+<task_done success='1' nmsize='2240' count='265' backedge_count='2' inlined_bytes='9' stamp='0.049'/>
+</task>
+<task compile_id='57' method='java.lang.invoke.MethodType ptypes ()[Ljava/lang/Class;' bytes='5' count='128' iicount='128' level='1' stamp='0.049'>
+<klass id='1398' name='[Ljava.lang.Class;' flags='1041'/>
+<klass id='1298' name='java.lang.invoke.MethodType' flags='17'/>
+<method id='1399' holder='1298' name='ptypes' return='1398' flags='0' bytes='5' iicount='129'/>
+<parse method='1399'  stamp='0.049'>
+<parse_done stamp='0.049'/>
+</parse>
+<code_cache total_blobs='441' nmethods='57' adapters='290' free_code_cache='250206336'/>
+<task_done success='1' nmsize='192' count='129' stamp='0.049'/>
+</task>
+<task compile_id='58' method='java.util.concurrent.ConcurrentHashMap putVal (Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;' bytes='432' count='256' backedge_count='21' iicount='256' level='3' stamp='0.049'>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<type id='1215' name='boolean'/>
+<klass id='1328' name='java.util.concurrent.ConcurrentHashMap' flags='1'/>
+<method id='1398' holder='1328' name='putVal' return='1228' arguments='1228 1228 1215' flags='16' bytes='432' iicount='256'/>
+<parse method='1398'  stamp='0.050'>
+<bc code='182' bci='17'/>
+<type id='1221' name='int'/>
+<method id='1400' holder='1228' name='hashCode' return='1221' flags='257' bytes='0' compile_id='6' compile_kind='c2n' compiler='' level='0' iicount='256'/>
+<call method='1400' instr='invokevirtual'/>
+<inline_fail reason='no static binding'/>
+<bc code='184' bci='20'/>
+<method id='1401' holder='1328' name='spread' return='1221' arguments='1221' flags='24' bytes='10' compile_id='12' compiler='c1' level='3' iicount='649'/>
+<call method='1401' instr='invokestatic'/>
+<inline_success reason='inline'/>
+<parse method='1401'>
+<parse_done stamp='0.050'/>
+</parse>
+<bc code='184' bci='69'/>
+<klass id='1403' name='java.util.concurrent.ConcurrentHashMap$Node' flags='8'/>
+<klass id='1404' name='[Ljava.util.concurrent.ConcurrentHashMap$Node;' flags='1040'/>
+<method id='1405' holder='1328' name='tabAt' return='1403' arguments='1404 1221' flags='24' bytes='22' compile_id='10' compiler='c1' level='3' iicount='1167'/>
+<call method='1405' instr='invokestatic'/>
+<inline_fail reason='callee uses too much stack'/>
+<bc code='183' bci='91'/>
+<type id='1223' name='void'/>
+<method id='1408' holder='1403' name='&lt;init&gt;' return='1223' arguments='1221 1228 1228' flags='0' bytes='20' iicount='283'/>
+<call method='1408' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1408'>
+<bc code='183' bci='1'/>
+<method id='1410' holder='1228' name='&lt;init&gt;' return='1223' flags='1' bytes='1' compile_id='24' compiler='c2' level='4' iicount='1501'/>
+<call method='1410' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1410'>
+<parse_done stamp='0.050'/>
+</parse>
+<parse_done stamp='0.050'/>
+</parse>
+<bc code='184' bci='94'/>
+<method id='1412' holder='1328' name='casTabAt' return='1215' arguments='1404 1221 1403 1403' flags='24' bytes='21' compile_id='49' compiler='c1' level='3' iicount='380'/>
+<call method='1412' instr='invokestatic'/>
+<inline_fail reason='callee uses too much stack'/>
+<bc code='182' bci='120'/>
+<method id='1414' holder='1328' name='helpTransfer' return='1404' arguments='1404 1403' flags='16' bytes='124' iicount='1'/>
+<call method='1414' instr='invokevirtual'/>
+<inline_fail reason='callee is too large'/>
+<bc code='182' bci='159'/>
+<method id='1416' holder='1228' name='equals' return='1215' arguments='1228' flags='1' bytes='11' iicount='50'/>
+<call method='1416' instr='invokevirtual'/>
+<inline_fail reason='no static binding'/>
+<bc code='184' bci='192'/>
+<call method='1405' instr='invokestatic'/>
+<inline_fail reason='callee uses too much stack'/>
+<bc code='182' bci='242'/>
+<call method='1416' instr='invokevirtual'/>
+<inline_fail reason='no static binding'/>
+<bc code='183' bci='293'/>
+<call method='1408' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1408'>
+<bc code='183' bci='1'/>
+<call method='1410' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1410'>
+<parse_done stamp='0.050'/>
+</parse>
+<parse_done stamp='0.050'/>
+</parse>
+<bc code='182' bci='331'/>
+<klass id='1418' name='java.util.concurrent.ConcurrentHashMap$TreeNode' unloaded='1'/>
+<klass id='1417' name='java.util.concurrent.ConcurrentHashMap$TreeBin' unloaded='1'/>
+<method id='1419' holder='1417' name='putTreeVal' return='1418' arguments='1221 1228 1228' unloaded='1'/>
+<call method='1419' instr='invokevirtual'/>
+<inline_fail reason='not inlineable'/>
+<bc code='183' bci='374'/>
+<klass id='1229' name='java.lang.String' flags='17'/>
+<klass id='1421' name='java.lang.IllegalStateException' unloaded='1'/>
+<method id='1423' holder='1421' name='&lt;init&gt;' return='1223' arguments='1229' unloaded='1'/>
+<call method='1423' instr='invokespecial'/>
+<inline_fail reason='not inlineable'/>
+<bc code='182' bci='409'/>
+<method id='1424' holder='1328' name='treeifyBin' return='1223' arguments='1404 1221' flags='18' bytes='164' iicount='1'/>
+<call method='1424' instr='invokevirtual'/>
+<inline_fail reason='callee is too large'/>
+<bc code='182' bci='427'/>
+<type id='1222' name='long'/>
+<method id='1426' holder='1328' name='addCount' return='1223' arguments='1222 1221' flags='18' bytes='280' compile_id='56' compiler='c1' level='3' iicount='272'/>
+<call method='1426' instr='invokevirtual'/>
+<inline_fail reason='callee is too large'/>
+<bc code='182' bci='49'/>
+<method id='1428' holder='1328' name='initTable' return='1404' flags='18' bytes='112' iicount='22'/>
+<call method='1428' instr='invokevirtual'/>
+<inline_fail reason='callee is too large'/>
+<bc code='183' bci='12'/>
+<klass id='1394' name='java.lang.NullPointerException' flags='1'/>
+<method id='1430' holder='1394' name='&lt;init&gt;' return='1223' flags='1' bytes='5' iicount='1'/>
+<call method='1430' instr='invokespecial'/>
+<inline_fail reason='don&apos;t inline Throwable constructors'/>
+<parse_done stamp='0.051'/>
+</parse>
+<code_cache total_blobs='444' nmethods='59' adapters='291' free_code_cache='250193152'/>
+<task_done success='1' nmsize='6640' count='259' backedge_count='21' inlined_bytes='52' stamp='0.052'/>
+</task>
+<task compile_id='62' method='java.lang.String equals (Ljava/lang/Object;)Z' bytes='56' count='390' iicount='390' level='3' stamp='0.052'>
+<type id='1215' name='boolean'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<klass id='1229' name='java.lang.String' flags='17'/>
+<method id='1398' holder='1229' name='equals' return='1215' arguments='1228' flags='1' bytes='56' iicount='390'/>
+<parse method='1398'  stamp='0.052'>
+<bc code='184' bci='44'/>
+<klass id='1390' name='[B' flags='1041'/>
+<klass id='1401' name='java.lang.StringLatin1' flags='16'/>
+<method id='1402' holder='1401' name='equals' return='1215' arguments='1390 1390' flags='9' bytes='36' iicount='264'/>
+<call method='1402' instr='invokestatic'/>
+<inline_fail reason='callee is too large'/>
+<parse_done stamp='0.052'/>
+</parse>
+<code_cache total_blobs='445' nmethods='60' adapters='291' free_code_cache='250191488'/>
+<task_done success='1' nmsize='1040' count='391' stamp='0.052'/>
+</task>
+<task compile_id='61' method='jdk.internal.util.ReferencedKeyMap get (Ljava/lang/Object;)Ljava/lang/Object;' bytes='26' count='256' iicount='256' level='3' stamp='0.052'>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<klass id='1398' name='jdk.internal.util.ReferencedKeyMap' flags='17'/>
+<method id='1399' holder='1398' name='get' return='1228' arguments='1228' flags='1' bytes='26' iicount='256'/>
+<parse method='1399'  stamp='0.052'>
+<bc code='184' bci='3'/>
+<klass id='1229' name='java.lang.String' flags='17'/>
+<klass id='1402' name='java.util.Objects' flags='17'/>
+<method id='1403' holder='1402' name='requireNonNull' return='1228' arguments='1228 1229' flags='9' bytes='15' iicount='287'/>
+<call method='1403' instr='invokestatic'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1403'>
+<bc code='183' bci='9'/>
+<type id='1223' name='void'/>
+<klass id='1394' name='java.lang.NullPointerException' flags='1'/>
+<method id='1405' holder='1394' name='&lt;init&gt;' return='1223' arguments='1229' flags='1' bytes='6' iicount='1'/>
+<call method='1405' instr='invokespecial'/>
+<inline_fail reason='don&apos;t inline Throwable constructors'/>
+<parse_done stamp='0.053'/>
+</parse>
+<bc code='182' bci='8'/>
+<method id='1407' holder='1398' name='removeStaleReferences' return='1223' flags='1' bytes='30' compile_id='32' compiler='c1' level='3' iicount='448'/>
+<call method='1407' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1407'>
+<bc code='182' bci='4'/>
+<klass id='1256' name='java.lang.ref.Reference' flags='1025'/>
+<klass id='1410' name='java.lang.ref.ReferenceQueue' flags='1'/>
+<method id='1411' holder='1410' name='poll' return='1256' flags='1' bytes='40' iicount='13'/>
+<call method='1411' instr='invokevirtual'/>
+<inline_fail reason='no static binding'/>
+<bc code='185' bci='20'/>
+<klass id='1366' name='java.util.Map' flags='1537'/>
+<method id='1412' holder='1366' name='remove' return='1228' arguments='1228' flags='1025' bytes='0' iicount='1'/>
+<call method='1412' instr='invokeinterface'/>
+<inline_fail reason='no static binding'/>
+<parse_done stamp='0.053'/>
+</parse>
+<bc code='182' bci='17'/>
+<klass id='1413' name='jdk.internal.util.ReferenceKey' flags='1537'/>
+<method id='1414' holder='1398' name='lookupKey' return='1413' arguments='1228' flags='2' bytes='9' iicount='352'/>
+<call method='1414' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1414'>
+<bc code='183' bci='5'/>
+<klass id='1416' name='jdk.internal.util.StrongReferenceKey' flags='16'/>
+<method id='1417' holder='1416' name='&lt;init&gt;' return='1223' arguments='1228' flags='0' bytes='10' iicount='352'/>
+<call method='1417' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1417'>
+<bc code='183' bci='1'/>
+<method id='1419' holder='1228' name='&lt;init&gt;' return='1223' flags='1' bytes='1' compile_id='24' compiler='c2' level='4' iicount='1501'/>
+<call method='1419' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1419'>
+<parse_done stamp='0.053'/>
+</parse>
+<parse_done stamp='0.053'/>
+</parse>
+<parse_done stamp='0.053'/>
+</parse>
+<bc code='185' bci='20'/>
+<method id='1421' holder='1366' name='get' return='1228' arguments='1228' flags='1025' bytes='0' iicount='1'/>
+<call method='1421' instr='invokeinterface'/>
+<inline_fail reason='no static binding'/>
+<parse_done stamp='0.053'/>
+</parse>
+<code_cache total_blobs='447' nmethods='61' adapters='292' free_code_cache='250186752'/>
+<task_done success='1' nmsize='2000' count='258' inlined_bytes='51' stamp='0.054'/>
+</task>
+<task compile_id='60' method='jdk.internal.org.objectweb.asm.SymbolTable get (I)Ljdk/internal/org/objectweb/asm/SymbolTable$Entry;' bytes='13' count='266' iicount='266' level='3' stamp='0.054'>
+<klass id='1399' name='jdk.internal.org.objectweb.asm.SymbolTable$Entry' flags='10'/>
+<type id='1221' name='int'/>
+<klass id='1398' name='jdk.internal.org.objectweb.asm.SymbolTable' flags='16'/>
+<method id='1400' holder='1398' name='get' return='1399' arguments='1221' flags='2' bytes='13' iicount='266'/>
+<parse method='1400'  stamp='0.054'>
+<parse_done stamp='0.054'/>
+</parse>
+<code_cache total_blobs='448' nmethods='62' adapters='292' free_code_cache='250185728'/>
+<task_done success='1' nmsize='336' count='266' stamp='0.054'/>
+</task>
+<task compile_id='63' method='java.lang.AbstractStringBuilder ensureCapacityInternal (I)V' bytes='39' count='386' iicount='386' level='3' stamp='0.054'>
+<type id='1223' name='void'/>
+<type id='1221' name='int'/>
+<klass id='1310' name='java.lang.AbstractStringBuilder' flags='1024'/>
+<method id='1398' holder='1310' name='ensureCapacityInternal' return='1223' arguments='1221' flags='2' bytes='39' iicount='386'/>
+<parse method='1398'  stamp='0.054'>
+<bc code='182' bci='24'/>
+<method id='1400' holder='1310' name='newCapacity' return='1221' arguments='1221' flags='2' bytes='59' iicount='72'/>
+<call method='1400' instr='invokevirtual'/>
+<inline_fail reason='callee is too large'/>
+<bc code='184' bci='32'/>
+<klass id='1390' name='[B' flags='1041'/>
+<klass id='1402' name='java.util.Arrays' flags='17'/>
+<method id='1403' holder='1402' name='copyOf' return='1390' arguments='1390 1221' flags='9' bytes='33' iicount='75'/>
+<call method='1403' instr='invokestatic'/>
+<inline_fail reason='callee uses too much stack'/>
+<parse_done stamp='0.054'/>
+</parse>
+<code_cache total_blobs='449' nmethods='63' adapters='292' free_code_cache='250184448'/>
+<task_done success='1' nmsize='544' count='386' stamp='0.054'/>
+</task>
+<task compile_id='64' method='java.lang.ref.Reference reachabilityFence (Ljava/lang/Object;)V' bytes='1' count='274' iicount='274' level='3' stamp='0.055'>
+<type id='1223' name='void'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<klass id='1256' name='java.lang.ref.Reference' flags='1025'/>
+<method id='1398' holder='1256' name='reachabilityFence' return='1223' arguments='1228' flags='9' bytes='1' iicount='448'/>
+<parse method='1398'  stamp='0.055'>
+<parse_done stamp='0.055'/>
+</parse>
+<code_cache total_blobs='450' nmethods='64' adapters='292' free_code_cache='250183680'/>
+<task_done success='1' nmsize='224' count='536' stamp='0.055'/>
+</task>
+<task compile_id='65' method='java.nio.Buffer session ()Ljdk/internal/foreign/MemorySessionImpl;' bytes='20' count='258' iicount='259' level='3' stamp='0.055'>
+<klass id='1398' name='jdk.internal.foreign.MemorySessionImpl' unloaded='1'/>
+<klass id='1333' name='java.nio.Buffer' flags='1025'/>
+<method id='1399' holder='1333' name='session' return='1398' flags='16' bytes='20' iicount='297'/>
+<parse method='1399'  stamp='0.055'>
+<bc code='182' bci='14'/>
+<klass id='1402' name='jdk.internal.foreign.AbstractMemorySegmentImpl' unloaded='1'/>
+<method id='1403' holder='1402' name='sessionImpl' return='1398' unloaded='1'/>
+<call method='1403' instr='invokevirtual'/>
+<inline_fail reason='not inlineable'/>
+<parse_done stamp='0.055'/>
+</parse>
+<code_cache total_blobs='451' nmethods='65' adapters='292' free_code_cache='250182400'/>
+<task_done success='1' nmsize='688' count='384' stamp='0.055'/>
+</task>
+<task compile_id='66' method='java.nio.Buffer checkIndex (I)I' bytes='12' count='390' iicount='390' level='3' stamp='0.055'>
+<type id='1221' name='int'/>
+<klass id='1333' name='java.nio.Buffer' flags='1025'/>
+<method id='1398' holder='1333' name='checkIndex' return='1221' arguments='1221' flags='16' bytes='12' iicount='411'/>
+<parse method='1398'  stamp='0.055'>
+<bc code='184' bci='8'/>
+<klass id='1400' name='java.util.function.BiFunction' flags='1537'/>
+<klass id='1404' name='jdk.internal.util.Preconditions' flags='1'/>
+<method id='1405' holder='1404' name='checkIndex' return='1221' arguments='1221 1221 1400' flags='9' bytes='18' compile_id='14' compiler='c1' level='3' iicount='1032'/>
+<call method='1405' instr='invokestatic'/>
+<inline_success reason='intrinsic'/>
+<parse_done stamp='0.055'/>
+</parse>
+<code_cache total_blobs='453' nmethods='67' adapters='292' free_code_cache='250180480'/>
+<task_done success='1' nmsize='344' count='533' stamp='0.055'/>
+</task>
+<task compile_id='69' method='java.nio.DirectByteBuffer ix (I)J' bytes='10' count='483' iicount='483' level='3' stamp='0.055'>
+<type id='1222' name='long'/>
+<type id='1221' name='int'/>
+<klass id='1398' name='java.nio.DirectByteBuffer' flags='0'/>
+<method id='1399' holder='1398' name='ix' return='1222' arguments='1221' flags='2' bytes='10' iicount='502'/>
+<parse method='1399'  stamp='0.056'>
+<parse_done stamp='0.056'/>
+</parse>
+<code_cache total_blobs='454' nmethods='68' adapters='292' free_code_cache='250179712'/>
+<task_done success='1' nmsize='272' count='562' stamp='0.056'/>
+</task>
+<task compile_id='67' method='java.nio.DirectByteBuffer get (I)B' bytes='34' count='563' iicount='563' level='3' stamp='0.056'>
+<type id='1219' name='byte'/>
+<type id='1221' name='int'/>
+<klass id='1398' name='java.nio.DirectByteBuffer' flags='0'/>
+<method id='1399' holder='1398' name='get' return='1219' arguments='1221' flags='1' bytes='34' iicount='601'/>
+<parse method='1399'  stamp='0.056'>
+<bc code='182' bci='4'/>
+<klass id='1405' name='jdk.internal.foreign.MemorySessionImpl' unloaded='1'/>
+<klass id='1333' name='java.nio.Buffer' flags='1025'/>
+<method id='1406' holder='1333' name='session' return='1405' flags='16' bytes='20' compile_id='65' compiler='c1' level='3' iicount='698'/>
+<call method='1406' instr='invokevirtual'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1406'>
+<bc code='182' bci='14'/>
+<klass id='1409' name='jdk.internal.foreign.AbstractMemorySegmentImpl' unloaded='1'/>
+<method id='1410' holder='1409' name='sessionImpl' return='1405' unloaded='1'/>
+<call method='1410' instr='invokevirtual'/>
+<inline_fail reason='not inlineable'/>
+<parse_done stamp='0.056'/>
+</parse>
+<bc code='182' bci='11'/>
+<method id='1411' holder='1333' name='checkIndex' return='1221' arguments='1221' flags='16' bytes='12' compile_id='66' compiler='c1' level='3' iicount='763'/>
+<call method='1411' instr='invokevirtual'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1411'>
+<bc code='184' bci='8'/>
+<klass id='1413' name='java.util.function.BiFunction' flags='1537'/>
+<klass id='1417' name='jdk.internal.util.Preconditions' flags='1'/>
+<method id='1418' holder='1417' name='checkIndex' return='1221' arguments='1221 1221 1413' flags='9' bytes='18' compile_id='14' compiler='c1' level='3' iicount='1131'/>
+<call method='1418' instr='invokestatic'/>
+<inline_success reason='intrinsic'/>
+<parse_done stamp='0.057'/>
+</parse>
+<bc code='182' bci='14'/>
+<type id='1222' name='long'/>
+<method id='1420' holder='1398' name='ix' return='1222' arguments='1221' flags='2' bytes='10' compile_id='69' compiler='c1' level='3' iicount='745'/>
+<call method='1420' instr='invokevirtual'/>
+<inline_fail reason='callee uses too much stack'/>
+<bc code='182' bci='17'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<klass id='1401' name='jdk.internal.misc.ScopedMemoryAccess' flags='1'/>
+<method id='1422' holder='1401' name='getByte' return='1219' arguments='1405 1228 1222' flags='1' bytes='16' iicount='762'/>
+<call method='1422' instr='invokevirtual'/>
+<inline_success reason='force inline by annotation'/>
+<dependency type='leaf_type' ctxk='1401'/>
+<parse method='1422'>
+<bc code='182' bci='4'/>
+<method id='1424' holder='1401' name='getByteInternal' return='1219' arguments='1405 1228 1222' flags='2' bytes='34' iicount='805'/>
+<call method='1424' instr='invokevirtual'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1424'>
+<bc code='182' bci='5'/>
+<type id='1223' name='void'/>
+<method id='1426' holder='1405' name='checkValidStateRaw' return='1223' unloaded='1'/>
+<call method='1426' instr='invokevirtual'/>
+<inline_fail reason='not inlineable'/>
+<bc code='182' bci='13'/>
+<klass id='1314' name='jdk.internal.misc.Unsafe' flags='17'/>
+<method id='1429' holder='1314' name='getByte' return='1219' arguments='1228 1222' flags='257' bytes='0' compile_id='72' compile_kind='c2n' compiler='' level='0' iicount='384'/>
+<call method='1429' instr='invokevirtual'/>
+<inline_success reason='intrinsic'/>
+<bc code='184' bci='28'/>
+<klass id='1256' name='java.lang.ref.Reference' flags='1025'/>
+<method id='1430' holder='1256' name='reachabilityFence' return='1223' arguments='1228' flags='9' bytes='1' compile_id='64' compiler='c1' level='3' iicount='2088'/>
+<call method='1430' instr='invokestatic'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1430'>
+<parse_done stamp='0.057'/>
+</parse>
+<bc code='184' bci='19'/>
+<call method='1430' instr='invokestatic'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1430'>
+<parse_done stamp='0.058'/>
+</parse>
+<parse_done stamp='0.058'/>
+</parse>
+<bc code='182' bci='12'/>
+<klass id='1238' name='java.lang.RuntimeException' flags='1'/>
+<klass id='1432' name='jdk.internal.misc.ScopedMemoryAccess$ScopedAccessError' unloaded='1'/>
+<method id='1433' holder='1432' name='newRuntimeException' return='1238' unloaded='1'/>
+<call method='1433' instr='invokevirtual'/>
+<inline_fail reason='not inlineable'/>
+<parse_done stamp='0.058'/>
+</parse>
+<bc code='184' bci='29'/>
+<call method='1430' instr='invokestatic'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1430'>
+<parse_done stamp='0.058'/>
+</parse>
+<bc code='184' bci='22'/>
+<call method='1430' instr='invokestatic'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1430'>
+<parse_done stamp='0.058'/>
+</parse>
+<parse_done stamp='0.058'/>
+</parse>
+<dependency type='leaf_type' ctxk='1401'/>
+<code_cache total_blobs='457' nmethods='71' adapters='292' free_code_cache='250173824'/>
+<task_done success='1' nmsize='2296' count='883' inlined_bytes='8' stamp='0.058'/>
+</task>
+<task compile_id='70' method='jdk.internal.misc.ScopedMemoryAccess getByte (Ljdk/internal/foreign/MemorySessionImpl;Ljava/lang/Object;J)B' bytes='16' count='883' iicount='883' level='3' stamp='0.058'>
+<type id='1219' name='byte'/>
+<klass id='1399' name='jdk.internal.foreign.MemorySessionImpl' unloaded='1'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<type id='1222' name='long'/>
+<klass id='1398' name='jdk.internal.misc.ScopedMemoryAccess' flags='1'/>
+<method id='1400' holder='1398' name='getByte' return='1219' arguments='1399 1228 1222' flags='1' bytes='16' iicount='883'/>
+<parse method='1400'  stamp='0.058'>
+<bc code='182' bci='4'/>
+<method id='1402' holder='1398' name='getByteInternal' return='1219' arguments='1399 1228 1222' flags='2' bytes='34' iicount='883'/>
+<call method='1402' instr='invokevirtual'/>
+<dependency type='leaf_type' ctxk='1398'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1402'>
+<bc code='182' bci='5'/>
+<type id='1223' name='void'/>
+<method id='1404' holder='1399' name='checkValidStateRaw' return='1223' unloaded='1'/>
+<call method='1404' instr='invokevirtual'/>
+<inline_fail reason='not inlineable'/>
+<bc code='182' bci='13'/>
+<klass id='1314' name='jdk.internal.misc.Unsafe' flags='17'/>
+<method id='1407' holder='1314' name='getByte' return='1219' arguments='1228 1222' flags='257' bytes='0' compile_id='72' compile_kind='c2n' compiler='' level='0' iicount='384'/>
+<call method='1407' instr='invokevirtual'/>
+<inline_success reason='intrinsic'/>
+<bc code='184' bci='28'/>
+<klass id='1256' name='java.lang.ref.Reference' flags='1025'/>
+<method id='1408' holder='1256' name='reachabilityFence' return='1223' arguments='1228' flags='9' bytes='1' compile_id='74' compiler='c2' level='4' iicount='2088'/>
+<call method='1408' instr='invokestatic'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1408'>
+<parse_done stamp='0.059'/>
+</parse>
+<bc code='184' bci='19'/>
+<call method='1408' instr='invokestatic'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1408'>
+<parse_done stamp='0.059'/>
+</parse>
+<parse_done stamp='0.059'/>
+</parse>
+<bc code='182' bci='12'/>
+<klass id='1238' name='java.lang.RuntimeException' flags='1'/>
+<klass id='1410' name='jdk.internal.misc.ScopedMemoryAccess$ScopedAccessError' unloaded='1'/>
+<method id='1411' holder='1410' name='newRuntimeException' return='1238' unloaded='1'/>
+<call method='1411' instr='invokevirtual'/>
+<inline_fail reason='not inlineable'/>
+<parse_done stamp='0.059'/>
+</parse>
+<dependency type='leaf_type' ctxk='1398'/>
+<code_cache total_blobs='458' nmethods='72' adapters='292' free_code_cache='250171904'/>
+<task_done success='1' nmsize='984' count='883' inlined_bytes='3' stamp='0.059'/>
+</task>
+<task compile_id='71' method='jdk.internal.misc.ScopedMemoryAccess getByteInternal (Ljdk/internal/foreign/MemorySessionImpl;Ljava/lang/Object;J)B' bytes='34' count='883' iicount='883' level='3' stamp='0.059'>
+<type id='1219' name='byte'/>
+<klass id='1399' name='jdk.internal.foreign.MemorySessionImpl' unloaded='1'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<type id='1222' name='long'/>
+<klass id='1398' name='jdk.internal.misc.ScopedMemoryAccess' flags='1'/>
+<method id='1400' holder='1398' name='getByteInternal' return='1219' arguments='1399 1228 1222' flags='2' bytes='34' iicount='883'/>
+<parse method='1400'  stamp='0.059'>
+<bc code='182' bci='5'/>
+<type id='1223' name='void'/>
+<method id='1402' holder='1399' name='checkValidStateRaw' return='1223' unloaded='1'/>
+<call method='1402' instr='invokevirtual'/>
+<inline_fail reason='not inlineable'/>
+<bc code='182' bci='13'/>
+<klass id='1314' name='jdk.internal.misc.Unsafe' flags='17'/>
+<method id='1405' holder='1314' name='getByte' return='1219' arguments='1228 1222' flags='257' bytes='0' compile_id='72' compile_kind='c2n' compiler='' level='0' iicount='384'/>
+<call method='1405' instr='invokevirtual'/>
+<inline_success reason='intrinsic'/>
+<bc code='184' bci='28'/>
+<klass id='1256' name='java.lang.ref.Reference' flags='1025'/>
+<method id='1406' holder='1256' name='reachabilityFence' return='1223' arguments='1228' flags='9' bytes='1' compile_id='74' compiler='c2' level='4' iicount='2088'/>
+<call method='1406' instr='invokestatic'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1406'>
+<parse_done stamp='0.059'/>
+</parse>
+<bc code='184' bci='19'/>
+<call method='1406' instr='invokestatic'/>
+<inline_success reason='force inline by annotation'/>
+<parse method='1406'>
+<parse_done stamp='0.059'/>
+</parse>
+<parse_done stamp='0.059'/>
+</parse>
+<code_cache total_blobs='459' nmethods='73' adapters='292' free_code_cache='250170496'/>
+<task_done success='1' nmsize='600' count='883' inlined_bytes='2' stamp='0.059'/>
+</task>
+<task compile_id='75' method='java.nio.Buffer limit ()I' bytes='5' count='158' iicount='158' level='1' stamp='0.059'>
+<type id='1221' name='int'/>
+<klass id='1333' name='java.nio.Buffer' flags='1025'/>
+<method id='1398' holder='1333' name='limit' return='1221' flags='17' bytes='5' iicount='158'/>
+<parse method='1398'  stamp='0.059'>
+<parse_done stamp='0.059'/>
+</parse>
+<code_cache total_blobs='460' nmethods='74' adapters='292' free_code_cache='250169728'/>
+<task_done success='1' nmsize='192' count='158' stamp='0.059'/>
+</task>
+<task compile_id='73' method='java.util.concurrent.ConcurrentHashMap$Node &lt;init&gt; (ILjava/lang/Object;Ljava/lang/Object;)V' bytes='20' count='448' iicount='448' level='3' stamp='0.059'>
+<type id='1223' name='void'/>
+<type id='1221' name='int'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<klass id='1398' name='java.util.concurrent.ConcurrentHashMap$Node' flags='8'/>
+<method id='1399' holder='1398' name='&lt;init&gt;' return='1223' arguments='1221 1228 1228' flags='0' bytes='20' iicount='448'/>
+<parse method='1399'  stamp='0.059'>
+<bc code='183' bci='1'/>
+<method id='1401' holder='1228' name='&lt;init&gt;' return='1223' flags='1' bytes='1' compile_id='24' compiler='c2' level='4' iicount='1556'/>
+<call method='1401' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1401'>
+<bc code='177' bci='0'/>
+<dependency type='no_finalizable_subclasses' ctxk='1398'/>
+<parse_done stamp='0.059'/>
+</parse>
+<parse_done stamp='0.059'/>
+</parse>
+<dependency type='no_finalizable_subclasses' ctxk='1398'/>
+<code_cache total_blobs='461' nmethods='75' adapters='292' free_code_cache='250168576'/>
+<task_done success='1' nmsize='544' count='448' inlined_bytes='1' stamp='0.059'/>
+</task>
+</compilation_log>
+<compilation_log thread='14588'>
+<start_compile_thread name='C2 CompilerThread0' thread='14588' process='14574' stamp='0.018'/>
+<task compile_id='24' method='java.lang.Object &lt;init&gt; ()V' bytes='1' count='1424' iicount='1424' stamp='0.032'>
+<type id='1223' name='void'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<method id='1398' holder='1228' name='&lt;init&gt;' return='1223' flags='1' bytes='1' compile_id='1' compiler='c1' level='3' iicount='1437'/>
+<parse method='1398' uses='1437.000000' stamp='0.033'>
+<bc code='177' bci='0'/>
+<dependency type='no_finalizable_subclasses' ctxk='1228'/>
+<parse_done nodes='21' live='20' memory='2648' stamp='0.033'/>
+</parse>
+<regalloc attempts='0' success='1'/>
+<dependency type='no_finalizable_subclasses' ctxk='1228'/>
+<code_cache total_blobs='386' nmethods='26' adapters='266' free_code_cache='250289536'/>
+<task_done success='1' nmsize='136' count='1501' stamp='0.033'/>
+</task>
+<task compile_id='68' method='java.lang.String charAt (I)C' bytes='25' count='5716' iicount='5716' stamp='0.055'>
+<type id='1216' name='char'/>
+<type id='1221' name='int'/>
+<klass id='1229' name='java.lang.String' flags='17'/>
+<method id='1398' holder='1229' name='charAt' return='1216' arguments='1221' flags='1' bytes='25' compile_id='15' compiler='c1' level='3' iicount='5716'/>
+<parse method='1398' uses='5716.000000' stamp='0.056'>
+<bc code='182' bci='1'/>
+<type id='1215' name='boolean'/>
+<method id='1400' holder='1229' name='isLatin1' return='1215' flags='0' bytes='19' compile_id='16' compiler='c1' level='3' iicount='7505'/>
+<call method='1400' count='5269' prof_factor='1.000000' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<predicted_call bci='1' exact='0' klass='1229'/>
+<parse method='1400' uses='5716.000000' stamp='0.056'>
+<bc code='153' bci='3'/>
+<branch target_bci='17' taken='0' not_taken='7531' cnt='7531.000000' prob='never'/>
+<bc code='154' bci='10'/>
+<branch target_bci='17' taken='0' not_taken='7531' cnt='7531.000000' prob='never'/>
+<uncommon_trap bci='10' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<parse_done nodes='70' live='68' memory='10160' stamp='0.056'/>
+</parse>
+<bc code='153' bci='4'/>
+<branch target_bci='16' taken='0' not_taken='5716' cnt='5716.000000' prob='never'/>
+<bc code='184' bci='12'/>
+<klass id='1390' name='[B' flags='1041'/>
+<klass id='1403' name='java.lang.StringLatin1' flags='16'/>
+<method id='1404' holder='1403' name='charAt' return='1216' arguments='1390 1221' flags='9' bytes='15' compile_id='17' compiler='c1' level='3' iicount='7060'/>
+<call method='1404' count='5269' prof_factor='1.000000' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1404' uses='5716.000000' stamp='0.056'>
+<bc code='190' bci='2'/>
+<uncommon_trap bci='2' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='184' bci='3'/>
+<type id='1223' name='void'/>
+<method id='1407' holder='1229' name='checkIndex' return='1223' arguments='1221 1221' flags='8' bytes='10' compile_id='18' compiler='c1' level='3' iicount='7296'/>
+<call method='1407' count='6824' prof_factor='0.809632' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1407' uses='5716.000000' stamp='0.056'>
+<bc code='184' bci='5'/>
+<klass id='1409' name='java.util.function.BiFunction' flags='1537'/>
+<klass id='1410' name='jdk.internal.util.Preconditions' flags='1'/>
+<method id='1411' holder='1410' name='checkIndex' return='1221' arguments='1221 1221 1409' flags='9' bytes='18' compile_id='14' compiler='c1' level='3' iicount='1131'/>
+<call method='1411' count='6794' prof_factor='0.783443' inline='1'/>
+<uncommon_trap bci='5' reason='range_check' action='make_not_entrant' debug_id='0'/>
+<intrinsic id='_Preconditions_checkIndex' nodes='22'/>
+<parse_done nodes='144' live='139' memory='21800' stamp='0.056'/>
+</parse>
+<bc code='51' bci='8'/>
+<uncommon_trap bci='8' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done nodes='170' live='163' memory='26096' stamp='0.056'/>
+</parse>
+<parse_done nodes='171' live='163' memory='26304' stamp='0.056'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='456' nmethods='69' adapters='292' free_code_cache='250171904'/>
+<task_done success='1' nmsize='272' count='8513' inlined_bytes='62' stamp='0.057'/>
+</task>
+<task compile_id='74' method='java.lang.ref.Reference reachabilityFence (Ljava/lang/Object;)V' bytes='1' count='2046' iicount='2046' stamp='0.057'>
+<type id='1223' name='void'/>
+<klass id='1228' name='java.lang.Object' flags='1'/>
+<klass id='1256' name='java.lang.ref.Reference' flags='1025'/>
+<method id='1398' holder='1256' name='reachabilityFence' return='1223' arguments='1228' flags='9' bytes='1' compile_id='64' compiler='c1' level='3' iicount='2088'/>
+<parse method='1398' uses='2088.000000' stamp='0.057'>
+<parse_done nodes='21' live='20' memory='2648' stamp='0.057'/>
+</parse>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='457' nmethods='70' adapters='292' free_code_cache='250171136'/>
+<task_done success='1' nmsize='104' count='2088' stamp='0.057'/>
+</task>
+</compilation_log>
+<hotspot_log_done stamp='0.061'/>
+</hotspot_log>
